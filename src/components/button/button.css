@@ -1,0 +1,27 @@
+.button {
+  height: 80px;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 0 12px;
+  cursor: pointer;
+  gap: 6px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 26px;
+  transition: all 0.25s ease;
+  margin-top: 60px;
+}
+
+.button-primario {
+  background: var(--text);
+  color: var(--text-h);
+}
+
+.button-primario:hover {
+  background: var(--buttonHover);
+}

@@ -1,0 +1,36 @@
+.sectionHome {
+    gap: 30px;
+    width: 100%;
+    display: flex;
+    margin-top: 15%;
+    padding-top: 10px;
+    align-items: center;
+    padding-inline: 14px;
+    padding-bottom: 16px;
+    justify-content: space-between;
+}
+
+.home {
+    width: 100%;
+}
+
+.titleHome {
+    font-size: 50px;
+    text-align: left;
+    font-weight: 600;
+    font-style: italic;
+    font-family: 'DM Serif Display', serif;
+}
+
+.textHome {
+    line-height: 1;
+    font-size: 25px;
+    text-align: left;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+.imageButton {
+    height: auto;
+    object-fit: contain;
+}
