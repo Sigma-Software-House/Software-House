@@ -23,5 +23,7 @@
 }
 
 .button-primario:hover {
-  background: var(--buttonHover);
+  background: var(--text-h);
+  color: var(--text);
+  box-shadow: 0 2px 22px rgba(255, 255, 243, 0.507);
 }

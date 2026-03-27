@@ -1,17 +1,26 @@
 .sectionHome {
-    gap: 30px;
     width: 100%;
     display: flex;
-    margin-top: 15%;
-    padding-top: 10px;
     align-items: center;
-    padding-inline: 14px;
-    padding-bottom: 16px;
     justify-content: space-between;
+    gap: 40px;
+    padding-inline: clamp(20px, 5vw, 80px);
+    margin-top: 120px;
 }
 
 .home {
     width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .titleHome {
@@ -30,7 +39,26 @@
     letter-spacing: 2px;
 }
 
+.image {
+    width: 100%;
+}
+
 .imageButton {
     height: auto;
     object-fit: contain;
+}
+
+.cards {
+    max-width: 1600px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.cards>* {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cards>*:hover {
+    transform: translateY(-6px);
 }

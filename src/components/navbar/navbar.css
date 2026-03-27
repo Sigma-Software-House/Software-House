@@ -56,7 +56,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  margin-left: 30%;
+  margin-left: 40%;
 }
 
 .search-icon {
@@ -112,6 +112,5 @@
 
     .navbar-nav {
         display: none;
-        /* For simplicity, hide nav items on very small screens or we can implement a hamburger menu later */
     }
 }
