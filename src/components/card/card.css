@@ -1,0 +1,65 @@
+.card {
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 12px;
+    cursor: pointer;
+    gap: 8px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 26px;
+    transition: all 0.25s ease;
+    margin-top: 60px;
+}
+
+.card-primario {
+    background: var(--text);
+    color: var(--text-card);
+    transition: all 0.3s ease;
+}
+
+.card-primario:hover {
+    background: var(--text-h);
+    color: var(--text);
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.iconCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+}
+
+.titleCard {
+    margin: 0;
+}
+
+.iconCard,
+.titleCard,
+.textCard {
+    color: var(--text-card);
+    transition: color 0.3s ease;
+}
+
+.card-primario:hover .iconCard,
+.card-primario:hover .titleCard,
+.card-primario:hover .textCard {
+    color: var(--text);
+}
+
+.textCard {
+    font-size: 14px;
+    line-height: 1.2;
+    margin-top: 8px;
+}
