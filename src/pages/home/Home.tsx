@@ -1,8 +1,8 @@
 import './home.css'
 import Button from '../../components/button/Button';
 import Card from '../../components/card/Card'
+import Carousel from '../../components/carousel/Carousel';
 import { Grid2x2X, MonitorCloud, Globe, BotMessageSquare } from "lucide-react";
-
 
 const Home = () => {
   return (
@@ -76,42 +76,78 @@ const Home = () => {
       <div className='solutions'>
         <h2 className='titleSolution'>Soluções</h2>
         <div className='contentSolutions'>
-          <Card
-            view="secundario"
-            image="/solution1.jpg"
-            title="Site Institucional"
-            text='Desenvolvemos portais robustos, seguros e com alta performance para sua empresa. 
-            Conteúdo gerenciável, UX intuitiva e conformidade com todas as diretrizes da LGPD.'
-            width={'300px'}
-            height={'420px'}
-          />
-          <Card
-            view="secundario"
-            image="/solution2.jpg"
-            title="Sistemas & Plataformas"
-            text='Engenharia de arquiteturas web escaláveis (ERPs, CRMs, Intranets e Portais B2B/B2C)
-            com foco em segurança, integração de processos e performance de alto tráfego.'
-            width={'300px'}
-            height={'420px'}
-          />
-          <Card
-            view="secundario"
-            image="/solution3.jpg"
-            title="Aplicativo Mobile"
-            text='Projetamos e desenvolvemos aplicativos nativos e híbridos com design focado no usuário, 
-            performance otimizada e integração perfeita para as plataformas iOS e Android.'
-            width={'300px'}
-            height={'420px'}
-          />
-          <Card
-            view="secundario"
-            image="/solution4.jpg"
-            title="Automação Inteligente"
-            text='Projetamos e desenvolvemos aplicativos nativos e híbridos com design focado no usuário,
-            performance otimizada e integração perfeita para as plataformas iOS e Android.'
-            width={'300px'}
-            height={'420px'}
-          />
+          <Carousel>
+            <Card
+              view="secundario"
+              image="/solution1.jpg"
+              title="Site Institucional"
+              text='Desenvolvemos portais robustos, seguros e com alta performance para sua empresa. 
+              Conteúdo gerenciável, UX intuitiva e conformidade com todas as diretrizes da LGPD.'
+              width={'300px'}
+              height={'420px'}
+            />
+            <Card
+              view="secundario"
+              image="/solution2.jpg"
+              title="Sistemas & Plataformas"
+              text='Engenharia de arquiteturas web escaláveis (ERPs, CRMs, Intranets e Portais B2B/B2C)
+              com foco em segurança, integração de processos e performance de alto tráfego.'
+              width={'300px'}
+              height={'420px'}
+            />
+            <Card
+              view="secundario"
+              image="/solution3.jpg"
+              title="Aplicativo Mobile"
+              text='Projetamos e desenvolvemos aplicativos nativos e híbridos com design focado no usuário, 
+              performance otimizada e integração perfeita para as plataformas iOS e Android.'
+              width={'300px'}
+              height={'420px'}
+            />
+            <Card
+              view="secundario"
+              image="/solution4.jpg"
+              title="Automação Inteligente"
+              text='Projetamos e desenvolvemos aplicativos nativos e híbridos com design focado no usuário,
+              performance otimizada e integração perfeita para as plataformas iOS e Android.'
+              width={'300px'}
+              height={'420px'}
+            />
+            <Card
+              view="secundario"
+              image="/solution5.jpg"
+              title="Discovery & Assessment"
+              text='Mapeamos e validamos a viabilidade técnica e de negócio de seu projeto 
+              digital. Reduza riscos, otimize investimentos e defina a Melhor Experiência Viável (MEV) antes da execução.'
+              width={'300px'}
+              height={'420px'}
+            />
+            <Card
+              view="secundario"
+              image="/solution6.jpg"
+              title="Digital Performance & SEO Técnico"
+              text='Otimizamos a performance de suas plataformas para garantir alta visibilidade,
+              tráfego qualificado e conversão de resultados. Auditoria técnica de SEO e estratégias de ranqueamento contínua'
+              width={'300px'}
+              height={'420px'}
+            />
+            <Card
+              view="secundario"
+              image="/solution7.jpg"
+              title="Modernização de Legado"
+              text='Transformamos seus sistemas legados em infraestruturas modernas, escaláveis e prontas para a nuvem. Migração estratégica 
+              e reengenharia de software para garantir inovação e segurança.'
+              width={'300px'}
+              height={'420px'}
+            />
+          </Carousel>
+          <Button
+            view="primario"
+            width={'20%'}
+            onClick={() => console.log("clicou")}
+          >
+            Veja todas as soluções
+          </Button>
         </div>
       </div>
       <div className='methodology'>
@@ -119,7 +155,6 @@ const Home = () => {
         <p className='textMethodology'>Na Softwere House, não entregamos apenas linhas de código. Construímos soluções técnicas robustas e escaláveis,
           focadas em transformar desafios complexos em experiências digitais simplificadas para o seu negócio.</p>
         <div className="methodologyContent">
-
           <div className="methodCard variant-1">
             <h2 className="methodTitle">100% Personalizado</h2>
             <p className="methodText"> Diferente de soluções prontas, desenvolvemos softwares moldados exatamente para
@@ -153,43 +188,70 @@ const Home = () => {
       <div className='sectors'>
         <h2 className='titleSectors'>Setores</h2>
         <div className='contentSectors'>
-          <Card
-            view="secundario"
-            image="/sector1.jpg"
-            title="Gestão & Logística"
-            text='Viabilizamos plataformas de controle operacional e monitoramento em tempo real, 
-            integrando inteligência de dados para otimizar cadeias de suprimentos e fluxos de trabalho complexos.'
-            width={'300px'}
-            height={'420px'}
-          />
-          <Card
-            view="secundario"
-            image="/sector2.jpg"
-            title="Educação"
-            text='Entregamos soluções completas de sites, estratégia de conteúdo e experiência de aprendizado 
-            (microlearning) para diferentes negócios na Educação e no Terceiro Setor.'
-            width={'300px'}
-            height={'420px'}
-          />
-          <Card
-            view="secundario"
-            image="/sector3.jpg"
-            title="Finanças"
-            text='Desenvolvemos ecossistemas financeiros seguros e escaláveis, focados em transações de 
-            alta performance, conformidade regulatória e proteção 
-            rigorosa de ativos digitais.'
-            width={'300px'}
-            height={'420px'}
-          />
-          <Card
-            view="secundario"
-            image="/sector4.jpg"
-            title="Segurança"
-            text='Projetamos sistemas de monitoramento avançado e infraestruturas críticas de proteção de dados, 
-            garantindo a integridade das informações e a continuidade operacional em ambientes de alto risco.'
-            width={'300px'}
-            height={'420px'}
-          />
+          <Carousel>
+            <Card
+              view="secundario"
+              image="/sector1.jpg"
+              title="Gestão & Logística"
+              text='Viabilizamos plataformas de controle operacional e monitoramento em tempo real, 
+              integrando inteligência de dados para otimizar cadeias de suprimentos e fluxos de trabalho complexos.'
+              width={'300px'}
+              height={'420px'}
+            />
+            <Card
+              view="secundario"
+              image="/sector2.jpg"
+              title="Educação"
+              text='Entregamos soluções completas de sites, estratégia de conteúdo e experiência de aprendizado 
+              (microlearning) para diferentes negócios na Educação e no Terceiro Setor.'
+              width={'300px'}
+              height={'420px'}
+            />
+            <Card
+              view="secundario"
+              image="/sector3.jpg"
+              title="Finanças"
+              text='Desenvolvemos ecossistemas financeiros seguros e escaláveis, focados em transações de 
+              alta performance, conformidade regulatória e proteção 
+              rigorosa de ativos digitais.'
+              width={'300px'}
+              height={'420px'}
+            />
+            <Card
+              view="secundario"
+              image="/sector4.jpg"
+              title="Segurança"
+              text='Projetamos sistemas de monitoramento avançado e infraestruturas críticas de proteção de dados, 
+              garantindo a integridade das informações e a continuidade operacional em ambientes de alto risco.'
+              width={'300px'}
+              height={'420px'}
+            />
+            <Card
+              view="secundario"
+              image="/sector5.png"
+              title="Esporte"
+              text='Implementamos tecnologias de análise de desempenho e plataformas de engajamento, 
+              conectando dados estatísticos e experiência do usuário para elevar o patamar digital de organizações esportivas.'
+              width={'300px'}
+              height={'420px'}
+            />
+            <Card
+              view="secundario"
+              image="/sector6.jpg"
+              title="Bens de Consumo"
+              text='Construímos estratégias digitais que impulsionam as marcas e os negócios de grandes indústrias que atuam no B2C,
+              através de Sites, SEO, Plataformas e E-commerces robustos, otimizando a jornada e os resultados de venda.'
+              width={'300px'}
+              height={'420px'}
+            />
+          </Carousel>
+          <Button
+            view="primario"
+            width={'20%'}
+            onClick={() => console.log("clicou")}
+          >
+            Veja todos os setores
+          </Button>
         </div>
       </div>
     </section>
