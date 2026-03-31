@@ -78,41 +78,41 @@ const Home = () => {
         <div className='contentSolutions'>
           <Carousel>
             <Card
-              view="secundario"
-              image="/solution1.jpg"
-              title="Site Institucional"
-              text='Desenvolvemos portais robustos, seguros e com alta performance para sua empresa. 
-              Conteúdo gerenciável, UX intuitiva e conformidade com todas as diretrizes da LGPD.'
-              width={'300px'}
-              height={'420px'}
-            />
-            <Card
-              view="secundario"
-              image="/solution2.jpg"
-              title="Sistemas & Plataformas"
-              text='Engenharia de arquiteturas web escaláveis (ERPs, CRMs, Intranets e Portais B2B/B2C)
-              com foco em segurança, integração de processos e performance de alto tráfego.'
-              width={'300px'}
-              height={'420px'}
-            />
-            <Card
-              view="secundario"
-              image="/solution3.jpg"
-              title="Aplicativo Mobile"
-              text='Projetamos e desenvolvemos aplicativos nativos e híbridos com design focado no usuário, 
-              performance otimizada e integração perfeita para as plataformas iOS e Android.'
-              width={'300px'}
-              height={'420px'}
-            />
-            <Card
-              view="secundario"
-              image="/solution4.jpg"
-              title="Automação Inteligente"
-              text='Projetamos e desenvolvemos aplicativos nativos e híbridos com design focado no usuário,
-              performance otimizada e integração perfeita para as plataformas iOS e Android.'
-              width={'300px'}
-              height={'420px'}
-            />
+            view="secundario"
+            image="/images/solutions/solution1.jpg"
+            title="Site Institucional"
+            text='Desenvolvemos portais robustos, seguros e com alta performance para sua empresa. 
+            Conteúdo gerenciável, UX intuitiva e conformidade com todas as diretrizes da LGPD.'
+            width={'300px'}
+            height={'420px'}
+          />
+          <Card
+            view="secundario"
+            image="/images/solutions/solution2.jpg"
+            title="Sistemas & Plataformas"
+            text='Engenharia de arquiteturas web escaláveis (ERPs, CRMs, Intranets e Portais B2B/B2C)
+            com foco em segurança, integração de processos e performance de alto tráfego.'
+            width={'300px'}
+            height={'420px'}
+          />
+          <Card
+            view="secundario"
+            image="/images/solutions/solution3.jpg"
+            title="Aplicativo Mobile"
+            text='Projetamos e desenvolvemos aplicativos nativos e híbridos com design focado no usuário, 
+            performance otimizada e integração perfeita para as plataformas iOS e Android.'
+            width={'300px'}
+            height={'420px'}
+          />
+          <Card
+            view="secundario"
+            image="/images/solutions/solution4.jpg"
+            title="Automação Inteligente"
+            text='Projetamos e desenvolvemos aplicativos nativos e híbridos com design focado no usuário,
+            performance otimizada e integração perfeita para as plataformas iOS e Android.'
+            width={'300px'}
+            height={'420px'}
+          />
             <Card
               view="secundario"
               image="/solution5.jpg"
