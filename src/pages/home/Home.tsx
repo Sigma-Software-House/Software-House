@@ -114,6 +114,84 @@ const Home = () => {
           />
         </div>
       </div>
+      <div className='methodology'>
+        <h2 className='titleMethodology'>Nossa base para o seu sucesso</h2>
+        <p className='textMethodology'>Na Softwere House, não entregamos apenas linhas de código. Construímos soluções técnicas robustas e escaláveis,
+          focadas em transformar desafios complexos em experiências digitais simplificadas para o seu negócio.</p>
+        <div className="methodologyContent">
+
+          <div className="methodCard variant-1">
+            <h2 className="methodTitle">100% Personalizado</h2>
+            <p className="methodText"> Diferente de soluções prontas, desenvolvemos softwares moldados exatamente para
+              a lógica da sua operação, garantindo que a tecnologia
+              se adapte ao seu negócio,
+              e não o contrário.</p>
+          </div>
+
+          <div className="methodCard variant-2">
+            <h2 className="methodTitle">High-End Stack</h2>
+            <p className="methodText">Utilizamos as linguagens e frameworks mais modernos do mercado mundial.
+              Isso garante que seu projeto seja rápido, seguro e fácil de atualizar conforme sua empresa cresce.</p>
+          </div>
+
+          <div className="methodCard variant-3">
+            <h2 className="methodTitle">Suporte Próximo</h2>
+            <p className="methodText">Acreditamos em tecnologia humana. Você terá uma linha direta com quem entende do seu projeto,
+              eliminando burocracias e garantindo respostas rápidas para qualquer desafio.</p>
+          </div>
+        </div>
+        <div className='buttonMethodology'>
+          <Button
+            view="primario"
+            width={'40%'}
+            onClick={() => console.log("clicou")}
+          >
+            Conheça nossa metodologia
+          </Button>
+        </div>
+      </div>
+      <div className='sectors'>
+        <h2 className='titleSectors'>Setores</h2>
+        <div className='contentSectors'>
+          <Card
+            view="secundario"
+            image="/sector1.jpg"
+            title="Gestão & Logística"
+            text='Viabilizamos plataformas de controle operacional e monitoramento em tempo real, 
+            integrando inteligência de dados para otimizar cadeias de suprimentos e fluxos de trabalho complexos.'
+            width={'300px'}
+            height={'420px'}
+          />
+          <Card
+            view="secundario"
+            image="/sector2.jpg"
+            title="Educação"
+            text='Entregamos soluções completas de sites, estratégia de conteúdo e experiência de aprendizado 
+            (microlearning) para diferentes negócios na Educação e no Terceiro Setor.'
+            width={'300px'}
+            height={'420px'}
+          />
+          <Card
+            view="secundario"
+            image="/sector3.jpg"
+            title="Finanças"
+            text='Desenvolvemos ecossistemas financeiros seguros e escaláveis, focados em transações de 
+            alta performance, conformidade regulatória e proteção 
+            rigorosa de ativos digitais.'
+            width={'300px'}
+            height={'420px'}
+          />
+          <Card
+            view="secundario"
+            image="/sector4.jpg"
+            title="Segurança"
+            text='Projetamos sistemas de monitoramento avançado e infraestruturas críticas de proteção de dados, 
+            garantindo a integridade das informações e a continuidade operacional em ambientes de alto risco.'
+            width={'300px'}
+            height={'420px'}
+          />
+        </div>
+      </div>
     </section>
   );
 };
