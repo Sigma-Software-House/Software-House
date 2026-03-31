@@ -1,12 +1,15 @@
 import './navbar.css';
 import { Search } from "lucide-react";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
         <header className="navbar-header">
 
             <div className="navbar-left">
-                <img className="navbar-logo" src="/logo-branco.png" alt="Logo" />
+                <Link to="/">
+                    <img className="navbar-logo" src="/logo-branco.png" alt="Logo" />
+                </Link>
             </div>
 
             <div className="navbar-search-wrapper">
@@ -19,11 +22,11 @@ const Navbar = () => {
             </div>
 
             <nav className="navbar-nav">
-                <a href="#solucoes">Soluções</a>
-                <a href="#showcases">Showcases</a>
-                <a href="#setores">Setores</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#contato">Contato</a>
+                <a href="/#solucoes">Soluções</a>
+                <Link to="/showcases">Showcases</Link>
+                <a href="/#setores">Setores</a>
+                <a href="/#sobre">Sobre</a>
+                <a href="/#contato">Contato</a>
             </nav>
 
         </header>
