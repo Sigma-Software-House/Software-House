@@ -1,0 +1,83 @@
+.mc-container {
+    width: 100%;
+    margin: 40px auto;
+    max-width: 1440px;
+}
+
+/* Override padding from Carousel if necessary to center */
+.mc-container .carousel-wrapper {
+    gap: 0; 
+}
+
+.mc-slide {
+    min-width: 300px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: left;
+}
+
+/* Container superior para número, linha e ícone */
+.mc-top {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.mc-number {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    font-size: 16px;
+    color: rgba(255,255,255,0.4);
+    font-weight: bold;
+}
+
+.mc-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mc-icon-wrapper img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    filter: brightness(0) invert(1); /* Pinta as imagens para branco caso não sejam totalmente */
+}
+
+/* Linha cresce automaticamente preenchendo o restante sem passar por trás da imagem */
+.mc-line {
+    flex: 1;
+    height: 2px;
+    background-color: rgba(255,255,255,0.2);
+    margin-left: 24px;
+}
+
+.mc-content {
+    padding-right: 12px;
+}
+
+.mc-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+.mc-text {
+    font-size: 14px;
+    color: #AAAAAA;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .mc-slide {
+        min-width: 250px;
+        max-width: 250px;
+    }
+}
