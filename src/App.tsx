@@ -6,6 +6,7 @@ import Home from './pages/home/Home'
 // import ShowcasesPreview from './components/showcasesPreview/ShowcasesPreview'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
+import Solutions from './pages/solutions/Solutions'
 
 function App() {
   return (
@@ -19,6 +20,15 @@ function App() {
               <Home />
               {/* <ShowcasesPreview />
               Future sections like Setores go here */}
+              <Contact />
+            </>
+          }
+        />
+        <Route
+          path="/solucoes"
+          element={
+            <>
+              <Solutions />
               <Contact />
             </>
           }
