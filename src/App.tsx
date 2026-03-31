@@ -7,6 +7,7 @@ import Home from './pages/home/Home'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 import Solutions from './pages/solutions/Solutions'
+import SolutionDetail from './pages/solutionDetail/SolutionDetail'
 
 function App() {
   return (
@@ -30,6 +31,14 @@ function App() {
             <>
               <Solutions />
               <Contact />
+            </>
+          }
+        />
+        <Route
+          path="/solutions/:slug"
+          element={
+            <>
+              <SolutionDetail />
             </>
           }
         />
