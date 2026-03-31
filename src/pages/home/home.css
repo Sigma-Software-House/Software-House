@@ -37,6 +37,7 @@
     text-align: left;
     font-style: italic;
     letter-spacing: 2px;
+    margin-bottom: 60px;
 }
 
 .image {
@@ -54,6 +55,8 @@
     grid-template-columns: repeat(4, minmax(260px, 1fr));
     gap: 24px;
     align-items: center;
+    margin-top: 50px;
+    margin-bottom: 80px;
 }
 
 .cards>* {
@@ -67,14 +70,6 @@
 .titleSolution {
     font-size: 40px;
     font-weight: 700;
-}
-
-.contentSolutions {
-    max-width: 1600px;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(260px, 1fr));
-    gap: 24px;
-    justify-items: center;
 }
 
 .methodology {
@@ -218,10 +213,3 @@
     font-weight: 700;
 }
 
-.contentSectors {
-    max-width: 1600px;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(260px, 1fr));
-    gap: 24px;
-    justify-items: center;
-}
