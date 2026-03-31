@@ -1,17 +1,22 @@
 .contact {
     width: 100%;
-    margin-top: 120px;
-    /* Use the provided image with a black linear gradient overlay */
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 100%), url('/contactImage.png') center/cover no-repeat;
-    background-color: #02093A;
-    /* Fallback color */
-    padding: 100px clamp(20px, 5vw, 80px);
+    margin-top: 0;
+    position: relative;
+    background: url('/contactImage.png') center/cover no-repeat;
+    padding: 60px clamp(20px, 5vw, 80px);
     display: flex;
     align-items: center;
     color: #FFFFFF;
     font-family: 'Poppins', sans-serif;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 1;
 }
 
 .contactContent {

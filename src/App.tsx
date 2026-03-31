@@ -39,6 +39,7 @@ function App() {
           element={
             <>
               <SolutionDetail />
+              <Contact />
             </>
           }
         />
