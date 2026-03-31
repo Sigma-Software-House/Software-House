@@ -1,0 +1,82 @@
+.showcasesPreviewWrapper {
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.showcasesPreviewContainer {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-inline: clamp(20px, 5vw, 80px);
+}
+
+.showcasesPreviewSectionTitle {
+    font-size: 50px;
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+    font-family: 'DM Serif Display', serif;
+    margin: 0;
+}
+
+.showcasesPreviewGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+@media (max-width: 900px) {
+    .showcasesPreviewGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.showcasePreviewCard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.showcasePreviewImagePlaceholder {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+
+.showcasePreviewInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-inline: 10px;
+}
+
+.showcasePreviewKicker {
+    font-size: 16px;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.showcasePreviewItemTitle {
+    font-family: 'DM Serif Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.showcasePreviewItemDesc {
+    font-size: 18px;
+    line-height: 1.4;
+    opacity: 0.9;
+    margin: 0;
+}
+
+.showcasePreviewAction {
+    margin-top: 10px;
+    padding-inline: 10px;
+}
