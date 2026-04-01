@@ -37,6 +37,7 @@ const Sectors = () => {
                     (microlearning) para diferentes negócios na Educação e no Terceiro Setor.'
                     width={'670px'}
                     height={'420px'}
+                    onClick={() => navigate('/setores/educacao')}
                 />
                 <Card
                     view="terceiro"
@@ -46,6 +47,7 @@ const Sectors = () => {
                     integrando inteligência de dados para otimizar cadeias de suprimentos e fluxos de trabalho complexos.'
                     width={'670px'}
                     height={'420px'}
+                    onClick={() => navigate('/setores/gestao-e-logistica')}
                 />
                 <Card
                     view="terceiro"
@@ -56,6 +58,7 @@ const Sectors = () => {
                     rigorosa de ativos digitais.'
                     width={'670px'}
                     height={'420px'}
+                    onClick={() => navigate('/setores/financas')}
                 />
                 <Card
                     view="terceiro"
@@ -65,6 +68,7 @@ const Sectors = () => {
                     garantindo a integridade das informações e a continuidade operacional em ambientes de alto risco.'
                     width={'670px'}
                     height={'420px'}
+                    onClick={() => navigate('/setores/seguranca')}
                 />
                 <Card
                     view="terceiro"
@@ -74,6 +78,7 @@ const Sectors = () => {
                     conectando dados estatísticos e experiência do usuário para elevar o patamar digital de organizações esportivas.'
                     width={'670px'}
                     height={'420px'}
+                    onClick={() => navigate('/setores/esporte')}
                 />
                 <Card
                     view="terceiro"
@@ -83,6 +88,7 @@ const Sectors = () => {
                     através de Sites, SEO, Plataformas e E-commerces robustos, otimizando a jornada e os resultados de venda.'
                     width={'670px'}
                     height={'420px'}
+                    onClick={() => navigate('/setores/bens-de-consumo')}
                 />
             </div>
             <div className='buttonSector'>

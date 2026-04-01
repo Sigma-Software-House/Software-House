@@ -9,6 +9,7 @@ import Footer from './components/footer/Footer'
 import Solutions from './pages/solutions/Solutions'
 import Sectors from './pages/sectors/Sectors'
 import SolutionDetail from './pages/solutionDetail/SolutionDetail'
+import SectorDetail from './pages/sectorDetail/SectorDetail'
 
 function App() {
   return (
@@ -50,6 +51,15 @@ function App() {
           element={
             <>
               <Sectors />
+              <Contact />
+            </>
+          }
+        />
+        <Route
+          path="/setores/:slug"
+          element={
+            <>
+              <SectorDetail />
               <Contact />
             </>
           }

@@ -6,7 +6,6 @@
     background-color: transparent;
 }
 
-/* Hero Section */
 .sd-hero {
     position: relative;
     width: 100%;
@@ -86,7 +85,6 @@
     60% { transform: translate(-50%, -10px); }
 }
 
-/* Intro Section */
 .sd-section-intro {
     display: flex;
     justify-content: space-between;
@@ -95,6 +93,7 @@
     padding: 100px clamp(20px, 5vw, 120px);
     max-width: 1440px;
     margin: 0 auto;
+    border-bottom: 2px solid rgba(255,255,255,0.1);
 }
 
 .sd-intro-text {
@@ -159,7 +158,7 @@
 }
 
 .sd-feature-icon {
-    color: #FFFFFF; /* High contrast icon */
+    color: #FFFFFF;
 }
 
 .sd-feature-content h4 {
@@ -175,7 +174,6 @@
     line-height: 1.6;
 }
 
-/* Banner Section */
 .sd-banner {
     width: 100%;
     border-top: 1px solid rgba(255,255,255,0.1);
@@ -201,7 +199,6 @@
     line-height: 1.6;
 }
 
-/* Cards Grid Section */
 .sd-cards-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -241,7 +238,6 @@
     line-height: 1.6;
 }
 
-/* Action Card (Fale com especialistas) */
 .sd-card-action {
     display: flex;
     flex-direction: column;
@@ -292,7 +288,6 @@
     border-color: #FFFFFF;
 }
 
-/* Methodology Section */
 .sd-methodology {
     text-align: left;
     padding: 100px clamp(20px, 5vw, 120px);
@@ -312,9 +307,6 @@
     margin-bottom: 30px;
 }
 
-
-
-/* Extra Contact Card */
 .sd-extra-contact {
     display: flex;
     justify-content: space-between;
@@ -322,7 +314,7 @@
     padding: 60px clamp(30px, 5vw, 80px);
     max-width: 1200px;
     margin: 0 auto 60px auto;
-    background: rgba(255,255,255,0.05); /* Slight highlight */
+    background: rgba(255,255,255,0.05); 
     border: 1px solid rgba(255,255,255,0.15);
     border-radius: 20px;
 }
