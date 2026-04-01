@@ -92,16 +92,13 @@
     height: 2px;
     bottom: 0;
     left: 0;
+    background-color: #ffffff;
     transition: width 0.3s ease;
 }
 
-.navbar-nav a:hover,
-.navbar-nav a:focus-visible {
-    text-decoration: underline;
-}
-
 .navbar-nav a:hover::after,
-.navbar-nav a:focus-visible::after {
+.navbar-nav a:focus-visible::after,
+.navbar-nav a.active::after {
     width: 100%;
 }
 

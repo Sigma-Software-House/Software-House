@@ -1,8 +1,14 @@
 import './navbar.css';
 import { Search } from "lucide-react";
-import { Link } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
+    const location = useLocation();
+
+    // Funções auxiliares para manter ativos os links caso estejamos em uma sub-página
+    const isSolutionsActive = location.pathname === '/solucoes' || location.pathname.startsWith('/solutions');
+    const isSectorsActive = location.pathname === '/setores' || location.pathname.startsWith('/sectors');
+
     return (
         <header className="navbar-header">
 
@@ -22,10 +28,20 @@ const Navbar = () => {
             </div>
 
             <nav className="navbar-nav">
-                <Link to="/solucoes">Soluções</Link>
-                {/* <Link to="/showcases">Showcases</Link> */}
-                <Link to="/setores">Setores</Link>
-                <a href="/#sobre">Sobre</a>
+                <NavLink 
+                    to="/solucoes" 
+                    className={({ isActive }) => isActive || isSolutionsActive ? 'active' : ''}
+                >
+                    Soluções
+                </NavLink>
+                {/* <NavLink to="/showcases">Showcases</NavLink> */}
+                <NavLink 
+                    to="/setores"
+                    className={({ isActive }) => isActive || isSectorsActive ? 'active' : ''}
+                >
+                    Setores
+                </NavLink>
+                <NavLink to="/sobre">Sobre</NavLink>
                 <a href="/#contato">Contato</a>
             </nav>
 
