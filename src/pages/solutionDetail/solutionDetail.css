@@ -101,20 +101,27 @@
     flex: 1;
 }
 
-/* Decorative Squares */
 .sd-decorative-squares {
     display: flex;
-    gap: 8px;
     margin-bottom: 20px;
 }
 
 
-.sd-square {
+.sd-square1 {
     display: inline-block;
-    width: 14px;
-    height: 14px;
-    background-color: #EEEEEE;
-    opacity: 0.15;
+    width: 55px;
+    height: 55px;
+    background-color: #ffffff;
+    opacity: 0.90;
+    position: relative;
+    top: 10px;
+}
+
+.sd-square2 {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    background-color: #cacaca;
 }
 
 .sd-intro-text h2 {
@@ -140,6 +147,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
+    margin-top: 15px;
 }
 
 .sd-feature-item {
