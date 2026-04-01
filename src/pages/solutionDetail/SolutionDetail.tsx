@@ -19,7 +19,6 @@ const SolutionDetail = () => {
 
     return (
         <section className='sd-page'>
-            {/* Hero Section */}
             <div className='sd-hero' style={{ backgroundImage: `url(${solution.heroImage})` }}>
                 <div className='sd-hero-overlay'></div>
                 <div className='sd-breadcrumb'>
@@ -34,14 +33,13 @@ const SolutionDetail = () => {
                 </div>
             </div>
 
-            {/* Section 1: Intro & Features */}
             <div className='sd-section-intro'>
                 <div className='sd-intro-text'>
                     <div className="sd-decorative-squares">
-                        <span className="sd-square"></span>
-                        <span className="sd-square"></span>
-                        <span className="sd-square"></span>
-                        <span className="sd-square"></span>
+                        <span className="sd-square1"></span>
+                        <span className="sd-square2"></span>
+                        <span className="sd-square1"></span>
+                        <span className="sd-square2"></span>
                     </div>
                     <h2>{solution.section1Title}</h2>
                     <p>{solution.section1Text}</p>
@@ -63,13 +61,11 @@ const SolutionDetail = () => {
                 </div>
             </div>
 
-            {/* Section 2: Banner Line */}
             <div className='sd-banner'>
                 <h2>{solution.section2Title}</h2>
                 {solution.section2Subtitle && <p className='sd-banner-subtitle'>{solution.section2Subtitle}</p>}
             </div>
 
-            {/* Section 3: Cards Grid */}
             <div className='sd-cards-grid'>
                 {solution.section3Cards.map((card, index) => {
                     const Icon = card.icon;
@@ -100,20 +96,18 @@ const SolutionDetail = () => {
                 })}
             </div>
 
-            {/* Section 4: Metodologia */}
             <div className='sd-methodology'>
                 <div className="sd-decorative-squares">
-                    <span className="sd-square"></span>
-                    <span className="sd-square"></span>
-                    <span className="sd-square"></span>
-                    <span className="sd-square"></span>
+                    <span className="sd-square2"></span>
+                    <span className="sd-square1"></span>
+                    <span className="sd-square2"></span>
+                    <span className="sd-square1"></span>
                 </div>
                 <h2>Metodologia de Alta Performance</h2>
                 <p>Nossa fundação ágil com a sua entrega final na ponta.</p>
                 <MethodologyCarousel />
             </div>
 
-            {/* Optional Section 5: Contact Card Extra */}
             {solution.hasContactCard && (
                 <div className='sd-extra-contact'>
                     <div className='sd-ec-content'>
