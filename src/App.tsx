@@ -6,6 +6,7 @@ import Home from './pages/home/Home'
 // import ShowcasesPreview from './components/showcasesPreview/ShowcasesPreview'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
+import About from './pages/about/About'
 import Solutions from './pages/solutions/Solutions'
 import Sectors from './pages/sectors/Sectors'
 import SolutionDetail from './pages/solutionDetail/SolutionDetail'
@@ -60,6 +61,15 @@ function App() {
           element={
             <>
               <SectorDetail />
+              <Contact />
+            </>
+          }
+        />
+        <Route
+          path="/sobre"
+          element={
+            <>
+              <About />
               <Contact />
             </>
           }

@@ -1,0 +1,122 @@
+.about-page {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.sectionAbout {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding-inline: clamp(20px, 5vw, 80px);
+    margin-top: 120px;
+    border-bottom: 2px solid rgba(255,255,255,0.1);
+}
+
+.contentAbout {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titleAbout {
+    font-size: 50px;
+    text-align: left;
+    font-weight: 600;
+    font-style: italic;
+    font-family: 'DM Serif Display', serif;
+}
+
+.textAbout {
+    line-height: 1;
+    font-size: 25px;
+    text-align: left;
+    font-style: italic;
+    letter-spacing: 2px;
+    margin-bottom: 60px;
+}
+
+.sectionAbout .imageAboutWrapper {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutHeroImage {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    object-fit: contain;
+}
+
+/* Nossa Essência Section */
+.aboutEssenceSection {
+    width: 100%;
+    padding: 80px 0;
+    padding-inline: clamp(20px, 5vw, 80px);
+}
+
+.aboutEssenceTitle {
+    font-size: 50px;
+    text-align: left;
+    font-weight: 600;
+    font-style: italic;
+    font-family: 'DM Serif Display', serif;
+    margin-bottom: 40px;
+}
+
+.aboutEssenceText {
+    line-height: 1.4;
+    font-size: 25px;
+    text-align: left;
+    font-style: italic;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.aboutEssenceText strong {
+    font-weight: 700;
+}
+
+/* Responsiveness */
+@media (max-width: 968px) {
+    .sectionAbout {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 80px;
+    }
+
+    .contentAbout, .sectionAbout .imageAboutWrapper {
+        width: 100%;
+    }
+
+    .titleAbout {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .textAbout {
+        text-align: center;
+    }
+
+    .aboutEssenceSection {
+        padding: 40px 0;
+        padding-inline: clamp(20px, 5vw, 80px);
+    }
+
+    .aboutEssenceTitle {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .aboutEssenceText {
+        font-size: 18px;
+        text-align: center;
+    }
+}
