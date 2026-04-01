@@ -167,7 +167,7 @@
 }
 
 .variant-3 {
-    background-image: url('/variant3.png');
+    background-image: url('../../../public/images/sectors/variant3.png');
     background-size: 180%;
     background-position: center;
     background-repeat: no-repeat;
