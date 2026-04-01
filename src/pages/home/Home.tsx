@@ -87,6 +87,7 @@ const Home = () => {
             Conteúdo gerenciável, UX intuitiva e conformidade com todas as diretrizes da LGPD.'
               width={'300px'}
               height={'420px'}
+              onClick={() => navigate('/solutions/sites-institucionais')}
             />
             <Card
               view="secundario"
@@ -96,6 +97,7 @@ const Home = () => {
             com foco em segurança, integração de processos e performance de alto tráfego.'
               width={'300px'}
               height={'420px'}
+              onClick={() => navigate('/solutions/sistemas-plataformas')}
             />
             <Card
               view="secundario"
@@ -105,6 +107,7 @@ const Home = () => {
             performance otimizada e integração perfeita para as plataformas iOS e Android.'
               width={'300px'}
               height={'420px'}
+              onClick={() => navigate('/solutions/aplicativo-mobile')}
             />
             <Card
               view="secundario"
@@ -114,6 +117,7 @@ const Home = () => {
             performance otimizada e integração perfeita para as plataformas iOS e Android.'
               width={'300px'}
               height={'420px'}
+              onClick={() => navigate('/solutions/automacao-inteligente')}
             />
             <Card
               view="secundario"
@@ -123,6 +127,7 @@ const Home = () => {
               digital. Reduza riscos, otimize investimentos e defina a Melhor Experiência Viável (MEV) antes da execução.'
               width={'300px'}
               height={'420px'}
+              onClick={() => navigate('/solutions/discovery-assessment')}
             />
             <Card
               view="secundario"
@@ -132,6 +137,7 @@ const Home = () => {
               tráfego qualificado e conversão de resultados. Auditoria técnica de SEO e estratégias de ranqueamento contínua'
               width={'300px'}
               height={'420px'}
+              onClick={() => navigate('/solutions/digital-performance-seo-tecnico')}
             />
             <Card
               view="secundario"
@@ -141,6 +147,7 @@ const Home = () => {
               e reengenharia de software para garantir inovação e segurança.'
               width={'300px'}
               height={'420px'}
+              onClick={() => navigate('/solutions/modernizacao-de-legado')}
             />
           </Carousel>
           <Button
@@ -199,6 +206,7 @@ const Home = () => {
               integrando inteligência de dados para otimizar cadeias de suprimentos e fluxos de trabalho complexos.'
               width={'300px'}
               height={'420px'}
+              onClick={() => navigate('/setores/gestao-e-logistica')}
             />
             <Card
               view="secundario"
@@ -208,6 +216,7 @@ const Home = () => {
               (microlearning) para diferentes negócios na Educação e no Terceiro Setor.'
               width={'300px'}
               height={'420px'}
+              onClick={() => navigate('/setores/educacao')}
             />
             <Card
               view="secundario"
@@ -218,6 +227,7 @@ const Home = () => {
               rigorosa de ativos digitais.'
               width={'300px'}
               height={'420px'}
+              onClick={() => navigate('/setores/financas')}
             />
             <Card
               view="secundario"
@@ -227,6 +237,7 @@ const Home = () => {
               garantindo a integridade das informações e a continuidade operacional em ambientes de alto risco.'
               width={'300px'}
               height={'420px'}
+              onClick={() => navigate('/setores/seguranca')}
             />
             <Card
               view="secundario"
@@ -236,6 +247,7 @@ const Home = () => {
               conectando dados estatísticos e experiência do usuário para elevar o patamar digital de organizações esportivas.'
               width={'300px'}
               height={'420px'}
+              onClick={() => navigate('/setores/esporte')}
             />
             <Card
               view="secundario"
@@ -245,52 +257,18 @@ const Home = () => {
               através de Sites, SEO, Plataformas e E-commerces robustos, otimizando a jornada e os resultados de venda.'
               width={'300px'}
               height={'420px'}
-            />
-            <Card
-              view="secundario"
-              image="/images/sectors/sector3.jpg"
-              title="Finanças"
-              text='Desenvolvemos ecossistemas financeiros seguros e escaláveis, focados em transações de 
-              alta performance, conformidade regulatória e proteção 
-              rigorosa de ativos digitais.'
-              width={'300px'}
-              height={'420px'}
-            />
-            <Card
-              view="secundario"
-              image="/images/sectors/sector4.jpg"
-              title="Segurança"
-              text='Projetamos sistemas de monitoramento avançado e infraestruturas críticas de proteção de dados, 
-              garantindo a integridade das informações e a continuidade operacional em ambientes de alto risco.'
-              width={'300px'}
-              height={'420px'}
-            />
-            <Card
-              view="secundario"
-              image="/images/sectors/sector5.png"
-              title="Esporte"
-              text='Implementamos tecnologias de análise de desempenho e plataformas de engajamento, 
-              conectando dados estatísticos e experiência do usuário para elevar o patamar digital de organizações esportivas.'
-              width={'300px'}
-              height={'420px'}
-            />
-            <Card
-              view="secundario"
-              image="/images/sectors/sector6.jpg"
-              title="Bens de Consumo"
-              text='Construímos estratégias digitais que impulsionam as marcas e os negócios de grandes indústrias que atuam no B2C,
-              através de Sites, SEO, Plataformas e E-commerces robustos, otimizando a jornada e os resultados de venda.'
-              width={'300px'}
-              height={'420px'}
+              onClick={() => navigate('/setores/bens-de-consumo')}
             />
           </Carousel>
-          <Button
-            view="primario"
-            width={'20%'}
-            onClick={() => console.log("clicou")}
-          >
-            Veja todos os setores
-          </Button>
+          <div className='buttonSectors'>
+            <Button
+              view="primario"
+              width={'20%'}
+              onClick={() => navigate('/sectors')}
+            >
+              Veja todos os setores
+            </Button>
+          </div>
         </div>
       </div>
     </section>

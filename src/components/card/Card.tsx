@@ -10,6 +10,7 @@ type cardProps = {
     height?: string | number;
     title?: string;
     text?: string;
+    onClick?: () => void;
 };
 
 export default function Card({

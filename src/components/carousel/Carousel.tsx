@@ -9,7 +9,7 @@ interface CarouselProps {
     title?: string;
 }
 
-const Carousel = ({ children, scrollAmount = 324, title }: CarouselProps) => {
+const Carousel = ({ children, scrollAmount = 324 }: CarouselProps) => {
     const carouselRef = useRef<HTMLDivElement>(null);
 
     const handleScroll = (direction: 'left' | 'right') => {
