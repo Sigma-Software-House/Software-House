@@ -23,8 +23,8 @@ const Navbar = () => {
 
             <nav className="navbar-nav">
                 <Link to="/solucoes">Soluções</Link>
-                <Link to="/showcases">Showcases</Link>
-                <a href="/#setores">Setores</a>
+                {/* <Link to="/showcases">Showcases</Link> */}
+                <Link to="/setores">Setores</Link>
                 <a href="/#sobre">Sobre</a>
                 <a href="/#contato">Contato</a>
             </nav>

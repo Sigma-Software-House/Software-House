@@ -32,6 +32,12 @@
     transition: all 0.3s ease;
 }
 
+.card-terceiro {
+    background: var(--text);
+    color: var(--text);
+    transition: all 0.3s ease;
+}
+
 .cardHeader {
     display: flex;
     align-items: center;
@@ -59,6 +65,12 @@
 .card-secundario .iconCard,
 .card-secundario .titleCard,
 .card-secundario .textCard {
+    color: var(--text);
+}
+
+.card-terceiro .iconCard,
+.card-terceiro .titleCard,
+.card-terceiro .textCard {
     color: var(--text);
 }
 
@@ -107,9 +119,19 @@
     text-align: start;
 }
 
+.card.card-terceiro.card-image {
+    justify-content: flex-end;
+    align-items: flex-start;
+    text-align: start;
+}
+
 .card-image .titleCard {
     transform: translateY(190px);
     transition: transform 0.4s cubic-bezier(.22,1,.36,1);
+}
+
+.card-image.card-terceiro .titleCard {
+    transform: translateY(70px);
 }
 
 .card-image:hover .titleCard {

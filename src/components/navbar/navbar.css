@@ -55,12 +55,13 @@
   position: relative;
   display: flex;
   align-items: center;
-  margin-left: 40%;
+  margin-left: 50%;
 }
 
 .search-icon {
   position: absolute;
   right: 43%;
+  z-index: 1;
   color: rgba(255,255,255,0.6);
   pointer-events: none;
 }
