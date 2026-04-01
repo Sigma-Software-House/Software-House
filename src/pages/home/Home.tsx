@@ -3,8 +3,10 @@ import Button from '../../components/button/Button';
 import Card from '../../components/card/Card'
 import Carousel from '../../components/carousel/Carousel';
 import { Grid2x2X, MonitorCloud, Globe, BotMessageSquare } from "lucide-react";
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <section className='home'>
       <div className='sectionHome'>
@@ -78,44 +80,44 @@ const Home = () => {
         <div className='contentSolutions'>
           <Carousel>
             <Card
-            view="secundario"
-            image="/images/solutions/solution1.jpg"
-            title="Site Institucional"
-            text='Desenvolvemos portais robustos, seguros e com alta performance para sua empresa. 
+              view="secundario"
+              image="/images/solutions/solution1.jpg"
+              title="Site Institucional"
+              text='Desenvolvemos portais robustos, seguros e com alta performance para sua empresa. 
             Conteúdo gerenciável, UX intuitiva e conformidade com todas as diretrizes da LGPD.'
-            width={'300px'}
-            height={'420px'}
-          />
-          <Card
-            view="secundario"
-            image="/images/solutions/solution2.jpg"
-            title="Sistemas & Plataformas"
-            text='Engenharia de arquiteturas web escaláveis (ERPs, CRMs, Intranets e Portais B2B/B2C)
-            com foco em segurança, integração de processos e performance de alto tráfego.'
-            width={'300px'}
-            height={'420px'}
-          />
-          <Card
-            view="secundario"
-            image="/images/solutions/solution3.jpg"
-            title="Aplicativo Mobile"
-            text='Projetamos e desenvolvemos aplicativos nativos e híbridos com design focado no usuário, 
-            performance otimizada e integração perfeita para as plataformas iOS e Android.'
-            width={'300px'}
-            height={'420px'}
-          />
-          <Card
-            view="secundario"
-            image="/images/solutions/solution4.jpg"
-            title="Automação Inteligente"
-            text='Projetamos e desenvolvemos aplicativos nativos e híbridos com design focado no usuário,
-            performance otimizada e integração perfeita para as plataformas iOS e Android.'
-            width={'300px'}
-            height={'420px'}
-          />
+              width={'300px'}
+              height={'420px'}
+            />
             <Card
               view="secundario"
-              image="/solution5.jpg"
+              image="/images/solutions/solution2.jpg"
+              title="Sistemas & Plataformas"
+              text='Engenharia de arquiteturas web escaláveis (ERPs, CRMs, Intranets e Portais B2B/B2C)
+            com foco em segurança, integração de processos e performance de alto tráfego.'
+              width={'300px'}
+              height={'420px'}
+            />
+            <Card
+              view="secundario"
+              image="/images/solutions/solution3.jpg"
+              title="Aplicativo Mobile"
+              text='Projetamos e desenvolvemos aplicativos nativos e híbridos com design focado no usuário, 
+            performance otimizada e integração perfeita para as plataformas iOS e Android.'
+              width={'300px'}
+              height={'420px'}
+            />
+            <Card
+              view="secundario"
+              image="/images/solutions/solution4.jpg"
+              title="Automação Inteligente"
+              text='Projetamos e desenvolvemos aplicativos nativos e híbridos com design focado no usuário,
+            performance otimizada e integração perfeita para as plataformas iOS e Android.'
+              width={'300px'}
+              height={'420px'}
+            />
+            <Card
+              view="secundario"
+              image="/images/solutions/solution5.jpg"
               title="Discovery & Assessment"
               text='Mapeamos e validamos a viabilidade técnica e de negócio de seu projeto 
               digital. Reduza riscos, otimize investimentos e defina a Melhor Experiência Viável (MEV) antes da execução.'
@@ -124,7 +126,7 @@ const Home = () => {
             />
             <Card
               view="secundario"
-              image="/solution6.jpg"
+              image="/images/solutions/solution6.jpg"
               title="Digital Performance & SEO Técnico"
               text='Otimizamos a performance de suas plataformas para garantir alta visibilidade,
               tráfego qualificado e conversão de resultados. Auditoria técnica de SEO e estratégias de ranqueamento contínua'
@@ -133,7 +135,7 @@ const Home = () => {
             />
             <Card
               view="secundario"
-              image="/solution7.jpg"
+              image="/images/solutions/solution7.jpg"
               title="Modernização de Legado"
               text='Transformamos seus sistemas legados em infraestruturas modernas, escaláveis e prontas para a nuvem. Migração estratégica 
               e reengenharia de software para garantir inovação e segurança.'
@@ -144,7 +146,7 @@ const Home = () => {
           <Button
             view="primario"
             width={'20%'}
-            onClick={() => console.log("clicou")}
+            onClick={() => navigate('/solucoes')}
           >
             Veja todas as soluções
           </Button>
@@ -179,7 +181,7 @@ const Home = () => {
           <Button
             view="primario"
             width={'40%'}
-            onClick={() => console.log("clicou")}
+            onClick={() => navigate('/setores')}
           >
             Conheça nossa metodologia
           </Button>
@@ -191,7 +193,7 @@ const Home = () => {
           <Carousel>
             <Card
               view="secundario"
-              image="/sector1.jpg"
+              image="/images/sectors/sector1.jpg"
               title="Gestão & Logística"
               text='Viabilizamos plataformas de controle operacional e monitoramento em tempo real, 
               integrando inteligência de dados para otimizar cadeias de suprimentos e fluxos de trabalho complexos.'
@@ -200,7 +202,7 @@ const Home = () => {
             />
             <Card
               view="secundario"
-              image="/sector2.jpg"
+              image="/images/sectors/sector2.jpg"
               title="Educação"
               text='Entregamos soluções completas de sites, estratégia de conteúdo e experiência de aprendizado 
               (microlearning) para diferentes negócios na Educação e no Terceiro Setor.'
@@ -209,7 +211,7 @@ const Home = () => {
             />
             <Card
               view="secundario"
-              image="/sector3.jpg"
+              image="/images/sectors/sector3.jpg"
               title="Finanças"
               text='Desenvolvemos ecossistemas financeiros seguros e escaláveis, focados em transações de 
               alta performance, conformidade regulatória e proteção 
@@ -219,7 +221,7 @@ const Home = () => {
             />
             <Card
               view="secundario"
-              image="/sector4.jpg"
+              image="/images/sectors/sector4.jpg"
               title="Segurança"
               text='Projetamos sistemas de monitoramento avançado e infraestruturas críticas de proteção de dados, 
               garantindo a integridade das informações e a continuidade operacional em ambientes de alto risco.'
@@ -228,7 +230,7 @@ const Home = () => {
             />
             <Card
               view="secundario"
-              image="/sector5.png"
+              image="/images/sectors/sector5.png"
               title="Esporte"
               text='Implementamos tecnologias de análise de desempenho e plataformas de engajamento, 
               conectando dados estatísticos e experiência do usuário para elevar o patamar digital de organizações esportivas.'
@@ -237,7 +239,44 @@ const Home = () => {
             />
             <Card
               view="secundario"
-              image="/sector6.jpg"
+              image="/images/sectors/sector6.jpg"
+              title="Bens de Consumo"
+              text='Construímos estratégias digitais que impulsionam as marcas e os negócios de grandes indústrias que atuam no B2C,
+              através de Sites, SEO, Plataformas e E-commerces robustos, otimizando a jornada e os resultados de venda.'
+              width={'300px'}
+              height={'420px'}
+            />
+            <Card
+              view="secundario"
+              image="/images/sectors/sector3.jpg"
+              title="Finanças"
+              text='Desenvolvemos ecossistemas financeiros seguros e escaláveis, focados em transações de 
+              alta performance, conformidade regulatória e proteção 
+              rigorosa de ativos digitais.'
+              width={'300px'}
+              height={'420px'}
+            />
+            <Card
+              view="secundario"
+              image="/images/sectors/sector4.jpg"
+              title="Segurança"
+              text='Projetamos sistemas de monitoramento avançado e infraestruturas críticas de proteção de dados, 
+              garantindo a integridade das informações e a continuidade operacional em ambientes de alto risco.'
+              width={'300px'}
+              height={'420px'}
+            />
+            <Card
+              view="secundario"
+              image="/images/sectors/sector5.png"
+              title="Esporte"
+              text='Implementamos tecnologias de análise de desempenho e plataformas de engajamento, 
+              conectando dados estatísticos e experiência do usuário para elevar o patamar digital de organizações esportivas.'
+              width={'300px'}
+              height={'420px'}
+            />
+            <Card
+              view="secundario"
+              image="/images/sectors/sector6.jpg"
               title="Bens de Consumo"
               text='Construímos estratégias digitais que impulsionam as marcas e os negócios de grandes indústrias que atuam no B2C,
               através de Sites, SEO, Plataformas e E-commerces robustos, otimizando a jornada e os resultados de venda.'

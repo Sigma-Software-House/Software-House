@@ -7,6 +7,7 @@ import Home from './pages/home/Home'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 import Solutions from './pages/solutions/Solutions'
+import Sectors from './pages/sectors/Sectors'
 import SolutionDetail from './pages/solutionDetail/SolutionDetail'
 
 function App() {
@@ -44,6 +45,15 @@ function App() {
           }
         />
         {/* <Route path="/showcases" element={<Showcases />} /> */}
+        <Route
+          path="/setores"
+          element={
+            <>
+              <Sectors />
+              <Contact />
+            </>
+          }
+        />
       </Routes>
       <Footer />
     </Router>

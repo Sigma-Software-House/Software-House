@@ -2,7 +2,7 @@ import "./card.css";
 import React from "react";
 
 type cardProps = {
-    view: "primario" | "secundario";
+    view: "primario" | "secundario" | "terceiro";
     variant?: "default" | "image";
     icon?: React.ReactNode | string;
     image?: string;

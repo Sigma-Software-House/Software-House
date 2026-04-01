@@ -26,3 +26,14 @@
   color: var(--text);
   box-shadow: 0 2px 22px rgba(255, 255, 243, 0.507);
 }
+
+.button-secundario {
+  background: #5B6DFD;
+  color: var(--text);
+}
+
+.button-secundario:hover {
+  background: var(--text-h);
+  color: var(--text);
+  box-shadow: 0 2px 22px #5B6DFD;
+}
