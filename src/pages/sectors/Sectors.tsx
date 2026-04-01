@@ -22,9 +22,9 @@ const Sectors = () => {
                 </div>
                 <div className='image'>
                     <img
-                        src="/public/images/sectors/sector0.png"
+                        src="/images/sectors/sector0.png"
                         alt="Ilustração desenvolvimento"
-                        className='imageButton'
+                        className='sectorHeroImage'
                     />
                 </div>
             </div>
