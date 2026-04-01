@@ -1,7 +1,10 @@
 import './solutions.css';
-import Button from '../../components/button/Button';
+import { ChevronRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Solutions = () => {
+    const navigate = useNavigate();
+
     return (
         <section className='solutions-page'>
             <div className='hero-solutions'>
@@ -30,7 +33,10 @@ const Solutions = () => {
                         <p>
                             Desenvolvemos a presença digital da sua empresa com portais robustos, corporativos, em layout exclusivo e performance de ponta para atrair, reter e engajar a sua audiência. Integração com as diretrizes da LGPD.
                         </p>
-                        <Button view="primario" width={'fit-content'} onClick={() => {}}>Saiba mais &gt;</Button>
+                        <div className='saiba-mais-link' onClick={() => navigate('/solutions/sites-institucionais')}>
+                            <span>Saiba mais</span>
+                            <button className='saiba-mais-arrow'><ChevronRight size={20} /></button>
+                        </div>
                     </div>
                     <div className='solution-img'>
                         <img src="/images/solutions/solution1.jpg" alt="Sites Institucionais" />
@@ -44,7 +50,10 @@ const Solutions = () => {
                         <p>
                             Engenharia de arquiteturas web escaláveis (ERPs, CRMs, Intranets e Portais B2B/B2C) com foco em segurança, integração de serviços e performance de alto tráfego.
                         </p>
-                        <Button view="primario" width={'fit-content'} onClick={() => {}}>Saiba mais &gt;</Button>
+                        <div className='saiba-mais-link' onClick={() => navigate('/solutions/sistemas-plataformas')}>
+                            <span>Saiba mais</span>
+                            <button className='saiba-mais-arrow'><ChevronRight size={20} /></button>
+                        </div>
                     </div>
                     <div className='solution-img'>
                         <img src="/images/solutions/solution2.jpg" alt="Sistemas & Plataformas" />
@@ -58,7 +67,10 @@ const Solutions = () => {
                         <p>
                             Projetamos e desenvolvemos aplicativos nativos e híbridos com design centrado no usuário, performance otimizada e integração perfeita para as plataformas iOS e Android.
                         </p>
-                        <Button view="primario" width={'fit-content'} onClick={() => {}}>Saiba mais &gt;</Button>
+                        <div className='saiba-mais-link' onClick={() => navigate('/solutions/aplicativos-mobile')}>
+                            <span>Saiba mais</span>
+                            <button className='saiba-mais-arrow'><ChevronRight size={20} /></button>
+                        </div>
                     </div>
                     <div className='solution-img'>
                         <img src="/images/solutions/solution3.jpg" alt="Aplicativos Mobile" />
@@ -72,7 +84,10 @@ const Solutions = () => {
                         <p>
                             Implementamos soluções com agentes de IA para otimização de fluxos de decisão e redução de custos operacionais com alto impacto e velocidade nos resultados da sua operação.
                         </p>
-                        <Button view="primario" width={'fit-content'} onClick={() => {}}>Saiba mais &gt;</Button>
+                        <div className='saiba-mais-link' onClick={() => navigate('/solutions/automacao-inteligente')}>
+                            <span>Saiba mais</span>
+                            <button className='saiba-mais-arrow'><ChevronRight size={20} /></button>
+                        </div>
                     </div>
                     <div className='solution-img'>
                         <img src="/images/solutions/solution4.jpg" alt="Automação Inteligente" />
@@ -86,7 +101,10 @@ const Solutions = () => {
                         <p>
                             Mapeamos as necessidades e viabilidades antes da execução do projeto digital reduzindo riscos, maximizando o ROI e validando a viabilidade técnica e arquitetural do produto final.
                         </p>
-                        <Button view="primario" width={'fit-content'} onClick={() => {}}>Saiba mais &gt;</Button>
+                        <div className='saiba-mais-link' onClick={() => navigate('/solutions/discovery-assessment')}>
+                            <span>Saiba mais</span>
+                            <button className='saiba-mais-arrow'><ChevronRight size={20} /></button>
+                        </div>
                     </div>
                     <div className='solution-img'>
                         <img src="/images/solutions/solution5.jpg" alt="Discovery & Assessment" />
@@ -100,7 +118,10 @@ const Solutions = () => {
                         <p>
                             Estruturamos a performance de busca da sua empresa, garantindo visibilidade na internet para atrair os usuários de pesquisa, e acelerar os resultados de conversão orgânica da sua empresa.
                         </p>
-                        <Button view="primario" width={'fit-content'} onClick={() => {}}>Saiba mais &gt;</Button>
+                        <div className='saiba-mais-link' onClick={() => navigate('/solutions/digital-performance')}>
+                            <span>Saiba mais</span>
+                            <button className='saiba-mais-arrow'><ChevronRight size={20} /></button>
+                        </div>
                     </div>
                     <div className='solution-img'>
                         <img src="/images/solutions/solution6.jpg" alt="Digital Performance & SEO Técnico" />
@@ -114,7 +135,10 @@ const Solutions = () => {
                         <p>
                             Atualizamos os seus softwares defasados em infraestruturas modernas, reescrevendo o produto para tecnologias recentes e integrando ambientes de forma segura e escalável para garantir maior eficiência perene.
                         </p>
-                        <Button view="primario" width={'fit-content'} onClick={() => {}}>Saiba mais &gt;</Button>
+                        <div className='saiba-mais-link' onClick={() => navigate('/solutions/modernizacao-legado')}>
+                            <span>Saiba mais</span>
+                            <button className='saiba-mais-arrow'><ChevronRight size={20} /></button>
+                        </div>
                     </div>
                     <div className='solution-img'>
                         <img src="/images/solutions/solution7.jpg" alt="Modernização de Legado" />
