@@ -12,10 +12,12 @@ import Solutions from './pages/solutions/Solutions'
 import Sectors from './pages/sectors/Sectors'
 import SolutionDetail from './pages/solutionDetail/SolutionDetail'
 import SectorDetail from './pages/sectorDetail/SectorDetail'
+import ScrollToTop from './components/scrollToTop/ScrollToTop'
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route

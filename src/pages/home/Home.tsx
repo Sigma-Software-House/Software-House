@@ -26,7 +26,7 @@ const Home = () => {
           <Button
             view="primario"
             width={'60%'}
-            onClick={() => console.log("clicou")}
+            onClick={() => navigate('/contato')}
           >
             Começar meu projeto
           </Button>
@@ -188,7 +188,7 @@ const Home = () => {
           <Button
             view="primario"
             width={'40%'}
-            onClick={() => navigate('/setores')}
+            onClick={() => navigate('/sobre')}
           >
             Conheça nossa metodologia
           </Button>
@@ -264,7 +264,7 @@ const Home = () => {
             <Button
               view="primario"
               width={'20%'}
-              onClick={() => navigate('/sectors')}
+              onClick={() => navigate('/setores')}
             >
               Veja todos os setores
             </Button>

@@ -1,7 +1,9 @@
 import './contact.css';
 import Button from '../button/Button';
+import { useNavigate } from 'react-router-dom';
 
 const Contact = () => {
+  const navigate = useNavigate();
     return (
         <section className='contact' id='contato'>
             <div className='contact-overlay'></div>
@@ -25,7 +27,7 @@ const Contact = () => {
                     <Button
                         view="secundario"
                         width={'auto'}
-                        onClick={() => console.log("Fale conosco")}
+                        onClick={() => navigate('/contato')}
                     >
                         Fale conosco
                     </Button>
