@@ -116,7 +116,7 @@ const ContactUs = () => {
                     )}
                 </div>
             </div>
-            <div className='sd-methodology'>
+            <div className='methodologyContactUs'>
                 <div className="sd-decorative-squares">
                     <span className="sd-square2"></span>
                     <span className="sd-square1"></span>
