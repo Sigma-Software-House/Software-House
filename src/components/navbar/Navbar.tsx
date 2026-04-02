@@ -42,7 +42,7 @@ const Navbar = () => {
                     Setores
                 </NavLink>
                 <NavLink to="/sobre">Sobre</NavLink>
-                <a href="/#contato">Contato</a>
+                <NavLink to="/contato">Contato</NavLink>
             </nav>
 
         </header>
