@@ -4,12 +4,60 @@ import './contactUs.css';
 
 const ContactUs = () => {
     const [selectedNature, setSelectedNature] = useState('Sistemas & Plataformas');
+    const [outrosTexto, setOutrosTexto] = useState('');
+    const [nome, setNome] = useState('');
+    const [email, setEmail] = useState('');
+    const [telefone, setTelefone] = useState('');
+    const [detalhes, setDetalhes] = useState('');
     const [isRecaptchaChecked, setIsRecaptchaChecked] = useState(true);
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
+    const [errorMsg, setErrorMsg] = useState('');
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        setIsSubmitted(true);
+        
+        if (!isRecaptchaChecked) {
+            setErrorMsg('Por favor, confirme o reCAPTCHA.');
+            return;
+        }
+
+        setIsLoading(true);
+        setErrorMsg('');
+
+        const natureza_consulta = selectedNature === 'Outros' ? outrosTexto : selectedNature;
+
+        try {
+            const response = await fetch('http://localhost:3000/api/clientes', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    nome,
+                    email,
+                    telefone,
+                    detalhes,
+                    natureza_consulta
+                })
+            });
+
+            if (!response.ok) {
+                throw new Error('Erro ao enviar o contato. Tente novamente mais tarde.');
+            }
+
+            setIsSubmitted(true);
+            setNome('');
+            setEmail('');
+            setTelefone('');
+            setDetalhes('');
+            setOutrosTexto('');
+            setSelectedNature('Sistemas & Plataformas');
+        } catch (error: any) {
+            setErrorMsg(error.message || 'Erro desconhecido');
+        } finally {
+            setIsLoading(false);
+        }
     };
 
     const natures = [
@@ -65,7 +113,15 @@ const ContactUs = () => {
                             </div>
                             {selectedNature === 'Outros' && (
                                 <div style={{ marginTop: '20px', width: '100%', maxWidth: '400px' }}>
-                                    <input type="text" className="formInput" placeholder="Especifique o tipo de projeto..." autoFocus />
+                                    <input 
+                                        type="text" 
+                                        className="formInput" 
+                                        placeholder="Especifique o tipo de projeto..." 
+                                        autoFocus 
+                                        value={outrosTexto}
+                                        onChange={(e) => setOutrosTexto(e.target.value)}
+                                        required={selectedNature === 'Outros'}
+                                    />
                                 </div>
                             )}
                         </div>
@@ -73,21 +129,49 @@ const ContactUs = () => {
                         <div className="formRow">
                             <div className="formGroup">
                                 <label className="formLabel">NOME COMPLETO</label>
-                                <input type="text" className="formInput" placeholder="Ex: João Silva" />
+                                <input 
+                                    type="text" 
+                                    className="formInput" 
+                                    placeholder="Ex: João Silva" 
+                                    value={nome}
+                                    onChange={(e) => setNome(e.target.value)}
+                                    required
+                                />
                             </div>
                             <div className="formGroup">
                                 <label className="formLabel">E-MAIL CORPORATIVO</label>
-                                <input type="email" className="formInput" placeholder="nome@empresa.com.br" />
+                                <input 
+                                    type="email" 
+                                    className="formInput" 
+                                    placeholder="nome@empresa.com.br" 
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
+                                    required
+                                />
                             </div>
                             <div className="formGroup">
                                 <label className="formLabel">TELEFONE</label>
-                                <input type="tel" className="formInput" placeholder="+55 (11) 99999-9999" />
+                                <input 
+                                    type="tel" 
+                                    className="formInput" 
+                                    placeholder="+55 (11) 99999-9999" 
+                                    value={telefone}
+                                    onChange={(e) => setTelefone(e.target.value)}
+                                    required
+                                />
                             </div>
                         </div>
 
                         <div className="formGroup">
                             <label className="formLabel">DETALHES DO PROJETO</label>
-                            <textarea className="formTextarea" placeholder="Descreva brevemente sua necessidade..." rows={5}></textarea>
+                            <textarea 
+                                className="formTextarea" 
+                                placeholder="Descreva brevemente sua necessidade..." 
+                                rows={5}
+                                value={detalhes}
+                                onChange={(e) => setDetalhes(e.target.value)}
+                                required
+                            ></textarea>
                         </div>
 
                         <div className="formFooter">
@@ -104,12 +188,15 @@ const ContactUs = () => {
                                 </div>
                                 <p>Este site é protegido pelo reCAPTCHA e as <a href="#">Políticas de Privacidade</a> do Google se aplicam.</p>
                             </div>
-                            <button type="submit" className="submitButton">
-                                Enviar Mensagem
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                    <polyline points="12 5 19 12 12 19"></polyline>
-                                </svg>
+                            {errorMsg && <p className="errorMsg" style={{ color: '#ef4444', marginBottom: '10px' }}>{errorMsg}</p>}
+                            <button type="submit" className="submitButton" disabled={isLoading}>
+                                {isLoading ? 'Enviando...' : 'Enviar Mensagem'}
+                                {!isLoading && (
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                )}
                             </button>
                         </div>
                         </form>
