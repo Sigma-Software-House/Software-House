@@ -35,7 +35,7 @@ const Sectors = () => {
                     title="Educação"
                     text='Entregamos soluções completas de sites, estratégia de conteúdo e experiência de aprendizado 
                     (microlearning) para diferentes negócios na Educação e no Terceiro Setor.'
-                    width={'670px'}
+                    width={'100%'}
                     height={'420px'}
                     onClick={() => navigate('/setores/educacao')}
                 />
@@ -45,7 +45,7 @@ const Sectors = () => {
                     title="Gestão & Logística"
                     text='Viabilizamos plataformas de controle operacional e monitoramento em tempo real, 
                     integrando inteligência de dados para otimizar cadeias de suprimentos e fluxos de trabalho complexos.'
-                    width={'670px'}
+                    width={'100%'}
                     height={'420px'}
                     onClick={() => navigate('/setores/gestao-e-logistica')}
                 />
@@ -56,7 +56,7 @@ const Sectors = () => {
                     text='Desenvolvemos ecossistemas financeiros seguros e escaláveis, focados em transações de 
                     alta performance, conformidade regulatória e proteção 
                     rigorosa de ativos digitais.'
-                    width={'670px'}
+                    width={'100%'}
                     height={'420px'}
                     onClick={() => navigate('/setores/financas')}
                 />
@@ -66,7 +66,7 @@ const Sectors = () => {
                     title="Segurança"
                     text='Projetamos sistemas de monitoramento avançado e infraestruturas críticas de proteção de dados, 
                     garantindo a integridade das informações e a continuidade operacional em ambientes de alto risco.'
-                    width={'670px'}
+                    width={'100%'}
                     height={'420px'}
                     onClick={() => navigate('/setores/seguranca')}
                 />
@@ -76,7 +76,7 @@ const Sectors = () => {
                     title="Esporte"
                     text='Implementamos tecnologias de análise de desempenho e plataformas de engajamento, 
                     conectando dados estatísticos e experiência do usuário para elevar o patamar digital de organizações esportivas.'
-                    width={'670px'}
+                    width={'100%'}
                     height={'420px'}
                     onClick={() => navigate('/setores/esporte')}
                 />
@@ -86,7 +86,7 @@ const Sectors = () => {
                     title="Bens de Consumo"
                     text='Construímos estratégias digitais que impulsionam as marcas e os negócios de grandes indústrias que atuam no B2C,
                     através de Sites, SEO, Plataformas e E-commerces robustos, otimizando a jornada e os resultados de venda.'
-                    width={'670px'}
+                    width={'100%'}
                     height={'420px'}
                     onClick={() => navigate('/setores/bens-de-consumo')}
                 />
@@ -94,7 +94,6 @@ const Sectors = () => {
             <div className='buttonSector'>
                 <Button
                     view="secundario"
-                    width={'20%'}
                     onClick={() => navigate('/contato')}
                 >
                     Outros setores

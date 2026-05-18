@@ -216,3 +216,78 @@
 .buttonSectors {
     margin-bottom: 50px;
 }
+
+/* Responsiveness for Home */
+@media (max-width: 900px) {
+    .sectionHome {
+        flex-direction: column;
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    .contentHome {
+        align-items: center;
+    }
+
+    .titleHome {
+        text-align: center;
+        font-size: 36px;
+    }
+
+    .textHome {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .contentHome button {
+        width: 100% !important;
+        max-width: 300px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        padding-inline: clamp(20px, 5vw, 80px);
+        gap: 20px;
+    }
+
+    .methodology {
+        padding: 60px 0;
+    }
+
+    .methodologyContent {
+        grid-template-columns: 1fr;
+        padding-inline: 20px;
+        gap: 40px;
+    }
+
+    .methodCard {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .titleMethodology {
+        font-size: 32px;
+        padding-inline: 20px;
+    }
+
+    .textMethodology {
+        font-size: 18px;
+        padding-inline: 20px;
+    }
+
+    .buttonMethodology {
+        padding-top: 40px;
+    }
+
+    .buttonMethodology button {
+        width: 100% !important;
+        max-width: 300px;
+    }
+
+    .contentSolutions button, .buttonSectors button {
+        width: 100% !important;
+        max-width: 300px;
+    }
+}

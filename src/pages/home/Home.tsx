@@ -25,7 +25,6 @@ const Home = () => {
 
           <Button
             view="primario"
-            width={'60%'}
             onClick={() => navigate('/contato')}
           >
             Começar meu projeto
@@ -152,7 +151,6 @@ const Home = () => {
           </Carousel>
           <Button
             view="primario"
-            width={'20%'}
             onClick={() => navigate('/solucoes')}
           >
             Veja todas as soluções
@@ -187,7 +185,6 @@ const Home = () => {
         <div className='buttonMethodology'>
           <Button
             view="primario"
-            width={'40%'}
             onClick={() => navigate('/sobre')}
           >
             Conheça nossa metodologia
@@ -263,7 +260,6 @@ const Home = () => {
           <div className='buttonSectors'>
             <Button
               view="primario"
-              width={'20%'}
               onClick={() => navigate('/setores')}
             >
               Veja todos os setores
