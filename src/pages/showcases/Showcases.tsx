@@ -1,28 +1,28 @@
 import './showcases.css';
 import Button from '../../components/button/Button';
 
-const showcasesList = [
-    {
-        kicker: "Saúde & Bem-estar",
-        title: "Portal Telemedicina",
-        description: "Plataforma de consultas online integrando vídeo e prontuário eletrônico seguro.",
-    },
-    {
-        kicker: "Finanças",
-        title: "BankPay App",
-        description: "Aplicativo financeiro com dashboard interativo e transações em tempo real.",
-    },
-    {
-        kicker: "Logística",
-        title: "Track & Trace System",
-        description: "Sistema interno para monitoramento global de frotas e controle de estoque.",
-    },
-    {
-        kicker: "E-commerce",
-        title: "StoreFront B2B",
-        description: "Plataforma de vendas robusta projetada para suportar alto volume de tráfego.",
-    }
-];
+// const showcasesList = [
+//     {
+//         kicker: "Saúde & Bem-estar",
+//         title: "Portal Telemedicina",
+//         description: "Plataforma de consultas online integrando vídeo e prontuário eletrônico seguro.",
+//     },
+//     {
+//         kicker: "Finanças",
+//         title: "BankPay App",
+//         description: "Aplicativo financeiro com dashboard interativo e transações em tempo real.",
+//     },
+//     {
+//         kicker: "Logística",
+//         title: "Track & Trace System",
+//         description: "Sistema interno para monitoramento global de frotas e controle de estoque.",
+//     },
+//     {
+//         kicker: "E-commerce",
+//         title: "StoreFront B2B",
+//         description: "Plataforma de vendas robusta projetada para suportar alto volume de tráfego.",
+//     }
+// ];
 
 const Showcases = () => {
     return (

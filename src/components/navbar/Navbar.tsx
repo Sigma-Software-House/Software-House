@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './navbar.css';
-import { Search, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Link, NavLink, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
