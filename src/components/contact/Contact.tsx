@@ -6,6 +6,7 @@ const Contact = () => {
   const navigate = useNavigate();
     return (
         <section className='contact' id='contato'>
+            <img src="/contactImage.png" alt="" className="contact-bg-image" loading="lazy" decoding="async" />
             <div className='contact-overlay'></div>
             <div className='contactContent'>
                 <h2 className='contactTitle'>

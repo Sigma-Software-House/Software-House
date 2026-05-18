@@ -115,22 +115,33 @@
 
 @media (max-width: 900px) {
     .navbar-header {
-        padding: 1rem 2rem;
-        grid-template-columns: auto 1fr auto;
-        gap: 1rem;
+        padding: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .navbar-logo {
+        height: 45px;
     }
 
     .mobile-menu-btn {
         display: block;
+        order: 2;
     }
 
     .navbar-search-wrapper {
-        justify-content: flex-end;
+        order: 3;
+        width: 100%;
+        margin-top: 0.5rem;
+        justify-content: center;
     }
 
     .navbar-search {
         width: 100%;
-        max-width: 200px;
+        max-width: none;
     }
 
     .navbar-nav {

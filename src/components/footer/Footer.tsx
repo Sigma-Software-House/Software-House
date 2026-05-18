@@ -9,34 +9,34 @@ const Footer = () => {
                 <div className='footerTop'>
                     <div className='footerBrand'>
                         <Link to="/">
-                            <img className='footerLogo' src="/logo-branco-copy.png" alt="Software House Logo" />
+                            <img className='footerLogo' src="/logo-branco-copy.png" alt="Software House Logo" loading="lazy" decoding="async" />
                         </Link>
                     </div>
 
                     <div className='footerContact'>
                         <p>
-                            <img className='footerIcon' src="/icons/whatsapp.png" alt="WhatsApp" />
+                            <img className='footerIcon' src="/icons/whatsapp.png" alt="WhatsApp" loading="lazy" decoding="async" />
                             +55 (11) 4002-8922
                         </p>
                         <p>
-                            <img className='footerIcon' src="/icons/mail.png" alt="Email" />
+                            <img className='footerIcon' src="/icons/mail.png" alt="Email" loading="lazy" decoding="async" />
                             fale@software.house
                         </p>
                         <div className='footerSocialIcons'>
                             <a className='footerSocialLink' href='#' aria-label="LinkedIn">
-                                <img src="/icons/linkedin.png" alt="LinkedIn" />
+                                <img src="/icons/linkedin.png" alt="LinkedIn" loading="lazy" decoding="async" />
                             </a>
                             <a className='footerSocialLink' href='#' aria-label="Instagram">
-                                <img src="/icons/instagram.png" alt="Instagram" />
+                                <img src="/icons/instagram.png" alt="Instagram" loading="lazy" decoding="async" />
                             </a>
                             <a className='footerSocialLink' href='#' aria-label="Facebook">
-                                <img src="/icons/facebook.png" alt="Facebook" />
+                                <img src="/icons/facebook.png" alt="Facebook" loading="lazy" decoding="async" />
                             </a>
                             <a className='footerSocialLink' href='#' aria-label="YouTube">
-                                <img src="/icons/youtube.png" alt="YouTube" />
+                                <img src="/icons/youtube.png" alt="YouTube" loading="lazy" decoding="async" />
                             </a>
                             <a className='footerSocialLink' href='#' aria-label="TikTok">
-                                <img src="/icons/tiktok.png" alt="TikTok" />
+                                <img src="/icons/tiktok.png" alt="TikTok" loading="lazy" decoding="async" />
                             </a>
                         </div>
                     </div>
@@ -55,7 +55,7 @@ const Footer = () => {
                 <div className='footerBottom'>
                     <div className='footerCopy'>
                         <span>2026</span>
-                        <span>SOFTWARE HOUSES ENGENHARIA DE SOFTWARES LTDA. Todos os direitos reservados.</span>
+                        <span>SOFTWARE HOUSE © Todos os direitos reservados.</span>
                     </div>
                     <div className='footerLegalLinks'>
                         <a href="#">Política de Cookies</a>

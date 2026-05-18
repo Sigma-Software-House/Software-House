@@ -29,13 +29,18 @@ export default function Card({
     return (
         <div
             className={`card card-${view} ${isImageCard ? "card-image" : ""}`}
-            style={{
-                width,
-                height,
-                backgroundImage: image ? `url(${image})` : undefined
-            }}
+            style={{ width, height }}
             {...props}
         >
+            {isImageCard && (
+                <img 
+                    src={image} 
+                    alt={title || "Background"} 
+                    className="cardBackgroundImage" 
+                    loading="lazy" 
+                    decoding="async" 
+                />
+            )}
             {isImageCard && <div className="overlay" />}
 
             <div className="cardContent">
@@ -44,7 +49,7 @@ export default function Card({
                     <div className="cardHeader">
                         {icon && (
                             typeof icon === "string"
-                                ? <img className="iconCard" src={icon} />
+                                ? <img className="iconCard" src={icon} alt="" loading="lazy" decoding="async" />
                                 : <span className="iconCard">{icon}</span>
                         )}
                         <h2 className="titleCard">{title}</h2>

@@ -22,7 +22,7 @@ export default function Button({
     >
       {icon &&
         (typeof icon === "string" ? (
-          <img className="iconButton" src={icon} />
+          <img className="iconButton" src={icon} alt="" loading="lazy" decoding="async" />
         ) : (
           <span className="iconButton">{icon}</span>
         ))}

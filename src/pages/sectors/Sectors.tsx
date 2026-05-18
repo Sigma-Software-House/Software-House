@@ -93,7 +93,7 @@ const Sectors = () => {
             </div>
             <div className='buttonSector'>
                 <Button
-                    view="secundario"
+                    view="primario"
                     onClick={() => navigate('/contato')}
                 >
                     Outros setores

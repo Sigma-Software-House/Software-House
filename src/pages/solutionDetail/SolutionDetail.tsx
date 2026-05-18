@@ -73,7 +73,7 @@ const SolutionDetail = () => {
                     if (card.isActionCard) {
                         return (
                             <div key={index} className='sd-card sd-card-action' onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}>
-                                <img src="/icons/sigma.png" alt="Sigma Logo" className="sd-card-logo" />
+                                <img src="/icons/sigma.png" alt="Sigma Logo" className="sd-card-logo" loading="lazy" decoding="async" />
                                 <div className="sd-card-action-bottom">
                                     <h3>{card.title}</h3>
                                     <button className='sd-card-arrow-btn' aria-label="Fale conosco">

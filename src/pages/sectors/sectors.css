@@ -58,10 +58,11 @@
 .cardSector {
     max-width: 1600px;
     display: grid;
-    grid-template-columns: repeat(2, minmax(260px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
     align-items: center;
     margin-top: 50px;
+    padding-inline: clamp(20px, 5vw, 80px);
     /* margin-bottom: 80px; */
 }
 
@@ -105,8 +106,8 @@
     }
 
     .cardSector {
-        grid-template-columns: 1fr;
-        padding-inline: clamp(20px, 5vw, 80px);
+        gap: 20px;
+        padding-inline: clamp(10px, 2vw, 40px);
     }
 
     .buttonSector button {

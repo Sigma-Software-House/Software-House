@@ -52,11 +52,12 @@
 .cards {
     max-width: 1600px;
     display: grid;
-    grid-template-columns: repeat(4, minmax(260px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
     align-items: center;
     margin-top: 50px;
     margin-bottom: 80px;
+    padding-inline: clamp(20px, 5vw, 80px);
 }
 
 .cards>* {
@@ -99,13 +100,15 @@
     max-width: 1360px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 400px);
-    gap: 80px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    padding-inline: clamp(20px, 5vw, 80px);
     justify-content: center;
 }
 
 .methodCard {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 470px;
     border-radius: 20px;
     position: relative;
@@ -114,7 +117,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(3, minmax(260px, 1fr));
+    margin: 0 auto;
 }
 
 .variant-1::before {
@@ -246,9 +249,8 @@
     }
 
     .cards {
-        grid-template-columns: 1fr;
-        padding-inline: clamp(20px, 5vw, 80px);
         gap: 20px;
+        padding-inline: clamp(10px, 2vw, 40px);
     }
 
     .methodology {
@@ -256,9 +258,9 @@
     }
 
     .methodologyContent {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         padding-inline: 20px;
-        gap: 40px;
+        gap: 30px;
     }
 
     .methodCard {

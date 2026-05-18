@@ -3,44 +3,24 @@ import Button from '../../components/button/Button';
 
 const showcasesList = [
     {
-        kicker: "Unimais",
-        title: "Portal+ - Unimais",
-        description: "Aplicativo Educacional (iOS & Android)",
+        kicker: "Saúde & Bem-estar",
+        title: "Portal Telemedicina",
+        description: "Plataforma de consultas online integrando vídeo e prontuário eletrônico seguro.",
     },
     {
-        kicker: "Nome da empresa",
-        title: "Site Institucional",
-        description: "Nova presença digital com foco em performance, UX e segmentação de públicos.",
+        kicker: "Finanças",
+        title: "BankPay App",
+        description: "Aplicativo financeiro com dashboard interativo e transações em tempo real.",
     },
     {
-        kicker: "Nome da empresa",
-        title: "Modernização de Legado",
-        description: "Migração estratégica e reengenharia de software para garantir inovação e segurança.",
+        kicker: "Logística",
+        title: "Track & Trace System",
+        description: "Sistema interno para monitoramento global de frotas e controle de estoque.",
     },
     {
-        kicker: "Nome da empresa",
-        title: "Discovery & Assessment",
-        description: "Mapeamos e validamos a viabilidade técnica e de negócio de seu projeto digital",
-    },
-    {
-        kicker: "Nome da empresa",
-        title: "Site Institucional",
-        description: "Nova presença digital com foco em performance, UX e segmentação de públicos.",
-    },
-    {
-        kicker: "Nome da empresa",
-        title: "Sistemas & Plataformas",
-        description: "Nova presença digital com foco em performance, UX e segmentação de públicos.",
-    },
-    {
-        kicker: "Nome da empresa",
-        title: "Modernização de Legado",
-        description: "Migração estratégica e reengenharia de software para garantir inovação e segurança.",
-    },
-    {
-        kicker: "Nome da empresa",
-        title: "Discovery & Assessment",
-        description: "Mapeamos e validamos a viabilidade técnica e de negócio de seu projeto digital",
+        kicker: "E-commerce",
+        title: "StoreFront B2B",
+        description: "Plataforma de vendas robusta projetada para suportar alto volume de tráfego.",
     }
 ];
 
@@ -64,19 +44,52 @@ const Showcases = () => {
                             performance, escalabilidade e valor real à sua operação.
                         </p>
                     </div>
-                    <div className='showcasesHeroImage'>
-                        {/* Placeholder for Graphic/Illustration */}
-                        <div className='placeholderIllustration'></div>
+                </div>
+
+                {/* Featured Project */}
+                <div className='featuredProject'>
+                    <div className='fp-images'>
+                        <img src="/images/showcases/danger-home.png" alt="Danger Kiss Cover Home" className="fp-main-img" loading="lazy" decoding="async" />
+                        <div className="fp-thumbnails">
+                            <img src="/images/showcases/danger-full.png" alt="Danger Kiss Cover Preview" loading="lazy" decoding="async" />
+                        </div>
+                    </div>
+                    <div className='fp-info'>
+                        <span className='fp-kicker'>Case de Sucesso</span>
+                        <h2 className='fp-title'>Danger Kiss Cover</h2>
+                        <div className='fp-tags'>
+                            <span className="fp-tag">React + Vite</span>
+                            <span className="fp-tag">Firebase</span>
+                            <span className="fp-tag">Prototipação</span>
+                        </div>
+                        <p className='fp-desc'>
+                            Desenvolvimento completo da presença digital oficial da banda Danger Kiss Cover.
+                            O projeto abrangeu desde a prototipação inicial e validação de usabilidade até o
+                            desenvolvimento em <strong>React + Vite</strong> com hospedagem ágil via <strong>Firebase</strong>. 
+                            Provemos suporte integral durante todo o ciclo de desenvolvimento e mantemos suporte constante pós-publicação, garantindo estabilidade, segurança e uma navegação imersiva para o público.
+                        </p>
+                        
+                        <div className='fp-testimonial'>
+                            <p className='fp-quote'>"A equipe captou exatamente a essência da banda! Desde a prototipação até o lançamento, o atendimento foi impecável. Ter esse suporte constante pós-lançamento nos dá muita segurança de que o site sempre funcionará perfeitamente para nossos fãs."</p>
+                            <span className='fp-author'> Rodrigo José Soares - Fundador da Banda, Danger Kiss Cover</span>
+                        </div>
+
+                        <Button view="primario" onClick={() => window.open('https://danger-kiss-cover.web.app/', '_blank')}>
+                            Acessar o Projeto Completo
+                        </Button>
                     </div>
                 </div>
 
                 {/* Grid of Showcases */}
-                <div className='showcasesGrid'>
+                {/* <div className='showcasesGridTitle'>
+                    <h2>Outros Projetos</h2>
+                </div> */}
+                {/* <div className='showcasesGrid'>
                     {showcasesList.map((item, index) => (
                         <div className='showcaseCard' key={index}>
-                            <div className='showcaseImagePlaceholder'>
+                            <div className='showcaseImagePlaceholder'> */}
                                 {/* Image will go here */}
-                            </div>
+                            {/* </div>
                             <div className='showcaseInfo'>
                                 <span className='showcaseKicker'>{item.kicker}</span>
                                 <h3 className='showcaseItemTitle'>{item.title}</h3>
@@ -84,18 +97,10 @@ const Showcases = () => {
                             </div>
                         </div>
                     ))}
-                </div>
-
-                {/* Action Button (e.g. See all or Pagination) */}
-                <div className='showcasesActions'>
-                    <div className='paginationPlaceholder'>
-                        <span className='paginationDot active'></span>
-                        <span className='paginationDot'></span>
-                    </div>
-                </div>
+                </div> */}
 
                 {/* CTA Banner Section */}
-                <div className='ctaBanner'>
+                {/* <div className='ctaBanner'>
                     <div className='ctaContent'>
                         <h2 className='ctaTitle'>
                             Viabilizando a próxima<br /> era digital da sua operação.
@@ -108,52 +113,12 @@ const Showcases = () => {
                         <Button
                             view="secundario"
                             width={'auto'}
-                            onClick={() => console.log("Fale conosco")}
+                            onClick={() => window.location.href = '/#contato'}
                         >
                             Fale conosco
                         </Button>
                     </div>
-                </div>
-
-                {/* Footer Section (If not globally provided) */}
-                <footer className='footerShowcases'>
-                    <div className='footerTop'>
-                        <div className='footerBrand'>
-                            <h2 className='footerLogoText'>Software House</h2>
-                        </div>
-                        <div className='footerContact'>
-                            <p>📞 +55 (11) 4002-8922</p>
-                            <p>✉️ fale@software.house</p>
-                            <div className='socialIcons'>
-                                <span className='socialPlaceholder'>in</span>
-                                <span className='socialPlaceholder'>ig</span>
-                                <span className='socialPlaceholder'>fb</span>
-                                <span className='socialPlaceholder'>yt</span>
-                            </div>
-                        </div>
-                        <div className='footerNav'>
-                            <ul>
-                                <li>Soluções</li>
-                                <li>Showcases</li>
-                                <li>Setores</li>
-                                <li>Sobre</li>
-                                <li>Contato</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div className='footerBottom'>
-                        <div className='copy'>
-                            <span>2026</span>
-                            <span>SOFTWARE HOUSES ENGENHARIA DE SOFTWARES LTDA. Todos os direitos reservados.</span>
-                        </div>
-                        <div className='legalLinks'>
-                            <span>Política de Cookies</span>
-                            <span>Política de Privacidade</span>
-                            <span>Manual do Site</span>
-                        </div>
-                    </div>
-                </footer>
+                </div> */}
 
             </section>
         </div>

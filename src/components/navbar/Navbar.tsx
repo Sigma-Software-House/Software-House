@@ -6,8 +6,7 @@ import { Link, NavLink, useLocation } from 'react-router-dom';
 const Navbar = () => {
     const location = useLocation();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-    // Funções auxiliares para manter ativos os links caso estejamos em uma sub-página
+    const isHomeActive = location.pathname === '/';
     const isSolutionsActive = location.pathname === '/solucoes' || location.pathname.startsWith('/solutions');
     const isSectorsActive = location.pathname === '/setores' || location.pathname.startsWith('/sectors');
 
@@ -28,20 +27,27 @@ const Navbar = () => {
                 </Link>
             </div>
 
-            <div className="navbar-search-wrapper">
+            {/* <div className="navbar-search-wrapper">
                 <Search className="search-icon" size={18} />
                 <input
                     type="text"
                     placeholder="Pesquisar"
                     className="navbar-search"
                 />
-            </div>
+            </div> */}
 
             <button className="mobile-menu-btn" onClick={toggleMenu} aria-label="Toggle Menu">
                 {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
 
             <nav className={`navbar-nav ${isMenuOpen ? 'open' : ''}`}>
+                 <NavLink 
+                    to="/" 
+                    className={({ isActive }) => isActive || isHomeActive ? 'active' : ''}
+                    onClick={closeMenu}
+                >
+                    Início
+                </NavLink>
                 <NavLink 
                     to="/solucoes" 
                     className={({ isActive }) => isActive || isSolutionsActive ? 'active' : ''}
@@ -49,7 +55,13 @@ const Navbar = () => {
                 >
                     Soluções
                 </NavLink>
-                {/* <NavLink to="/showcases">Showcases</NavLink> */}
+                <NavLink 
+                    to="/showcases"
+                    className={({ isActive }) => isActive || location.pathname.startsWith('/showcases') ? 'active' : ''}
+                    onClick={closeMenu}
+                >
+                    Showcases
+                </NavLink>
                 <NavLink 
                     to="/setores"
                     className={({ isActive }) => isActive || isSectorsActive ? 'active' : ''}

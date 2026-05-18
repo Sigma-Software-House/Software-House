@@ -39,7 +39,7 @@ const Solutions = () => {
                         </div>
                     </div>
                     <div className='solution-img'>
-                        <img src="/images/solutions/solution1.jpg" alt="Sites Institucionais" />
+                        <img src="/images/solutions/solution1.jpg" alt="Sites Institucionais" loading="lazy" decoding="async" />
                     </div>
                 </div>
 
@@ -56,7 +56,7 @@ const Solutions = () => {
                         </div>
                     </div>
                     <div className='solution-img'>
-                        <img src="/images/solutions/solution2.jpg" alt="Sistemas & Plataformas" />
+                        <img src="/images/solutions/solution2.jpg" alt="Sistemas & Plataformas" loading="lazy" decoding="async" />
                     </div>
                 </div>
 
@@ -73,7 +73,7 @@ const Solutions = () => {
                         </div>
                     </div>
                     <div className='solution-img'>
-                        <img src="/images/solutions/solution3.jpg" alt="Aplicativos Mobile" />
+                        <img src="/images/solutions/solution3.jpg" alt="Aplicativos Mobile" loading="lazy" decoding="async" />
                     </div>
                 </div>
 
@@ -90,7 +90,7 @@ const Solutions = () => {
                         </div>
                     </div>
                     <div className='solution-img'>
-                        <img src="/images/solutions/solution4.jpg" alt="Automação Inteligente" />
+                        <img src="/images/solutions/solution4.jpg" alt="Automação Inteligente" loading="lazy" decoding="async" />
                     </div>
                 </div>
 
@@ -107,7 +107,7 @@ const Solutions = () => {
                         </div>
                     </div>
                     <div className='solution-img'>
-                        <img src="/images/solutions/solution5.jpg" alt="Discovery & Assessment" />
+                        <img src="/images/solutions/solution5.jpg" alt="Discovery & Assessment" loading="lazy" decoding="async" />
                     </div>
                 </div>
 
@@ -124,7 +124,7 @@ const Solutions = () => {
                         </div>
                     </div>
                     <div className='solution-img'>
-                        <img src="/images/solutions/solution6.jpg" alt="Digital Performance & SEO Técnico" />
+                        <img src="/images/solutions/solution6.jpg" alt="Digital Performance & SEO Técnico" loading="lazy" decoding="async" />
                     </div>
                 </div>
 
@@ -141,7 +141,7 @@ const Solutions = () => {
                         </div>
                     </div>
                     <div className='solution-img'>
-                        <img src="/images/solutions/solution7.jpg" alt="Modernização de Legado" />
+                        <img src="/images/solutions/solution7.jpg" alt="Modernização de Legado" loading="lazy" decoding="async" />
                     </div>
                 </div>
 
