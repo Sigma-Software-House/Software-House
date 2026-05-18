@@ -43,7 +43,7 @@ const Home = () => {
       <div className='cards'>
         <Card
           view='primario'
-          height={'140px'}
+          height='100%'
           title='Aplicativos Mobile'
           text='Criamos experiências nativas e híbridas de alta performance,
           focadas em usabilidade e prontas para escalar nas lojas iOS e Android.'
@@ -51,7 +51,7 @@ const Home = () => {
         />
         <Card
           view='primario'
-          height={'140px'}
+          height='100%'
           title='Sistemas Internos'
           text='Automatize processos e ganhe produtividade com softwares de 
           gestão personalizados, feitos sob medida para a sua operação.'
@@ -59,7 +59,7 @@ const Home = () => {
         />
         <Card
           view='primario'
-          height={'140px'}
+          height='100%'
           title='Sites de Alta Conversão'
           text='Mais que um cartão de visitas: desenvolvemos portais e sites institucionais 
           otimizados para busca (SEO) e focados em gerar novos negócios.'
@@ -67,7 +67,7 @@ const Home = () => {
         />
         <Card
           view='primario'
-          height={'140px'}
+          height='100%'
           title='Inteligência Artificial'
           text='Implementamos IA para análise de dados, automação de tarefas e chatbots
           inteligentes que elevam o patamar tecnológico da sua empresa.'
