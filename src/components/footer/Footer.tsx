@@ -32,13 +32,13 @@ const Footer = () => {
                     <div className='footerContactColumn'>
                         <h4 className='footerColumnTitle'>Contato</h4>
                         <div className='footerContactList'>
-                            <a href="https://wa.me/551140028922" className='footerContactItem' target="_blank" rel="noopener noreferrer">
+                            <a href="https://wa.me/5511943131835" className='footerContactItem' target="_blank" rel="noopener noreferrer">
                                 <img className='footerIcon' src="/icons/whatsapp.png" alt="WhatsApp" loading="lazy" decoding="async" />
-                                +55 (11) 4002-8922
+                                +55 (11) 94313-1835
                             </a>
-                            <a href="mailto:fale@software.house" className='footerContactItem'>
+                            <a href="mailto:softwarehouse.sigma@gmail.com" className='footerContactItem'>
                                 <img className='footerIcon' src="/icons/mail.png" alt="Email" loading="lazy" decoding="async" />
-                                fale@software.house
+                                softwarehouse.sigma@gmail.com
                             </a>
                             <a href="https://www.instagram.com/softwarehouse.sigma" className='footerContactItem' target="_blank" rel="noopener noreferrer">
                                 <img className='footerIcon' src="/icons/instagram.png" alt="Instagram" loading="lazy" decoding="async" />
