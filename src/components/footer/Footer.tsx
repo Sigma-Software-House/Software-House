@@ -23,13 +23,13 @@ const Footer = () => {
                             fale@software.house
                         </p>
                         <div className='footerSocialIcons'>
-                            <a className='footerSocialLink' href='#' aria-label="LinkedIn">
+                            {/* <a className='footerSocialLink' href='#' aria-label="LinkedIn">
                                 <img src="/icons/linkedin.png" alt="LinkedIn" loading="lazy" decoding="async" />
-                            </a>
-                            <a className='footerSocialLink' href='#' aria-label="Instagram">
+                            </a> */}
+                            <a className='footerSocialLink' href='https://www.instagram.com/softwarehouse.sigma' aria-label="Instagram">
                                 <img src="/icons/instagram.png" alt="Instagram" loading="lazy" decoding="async" />
                             </a>
-                            <a className='footerSocialLink' href='#' aria-label="Facebook">
+                            {/* <a className='footerSocialLink' href='#' aria-label="Facebook">
                                 <img src="/icons/facebook.png" alt="Facebook" loading="lazy" decoding="async" />
                             </a>
                             <a className='footerSocialLink' href='#' aria-label="YouTube">
@@ -37,7 +37,7 @@ const Footer = () => {
                             </a>
                             <a className='footerSocialLink' href='#' aria-label="TikTok">
                                 <img src="/icons/tiktok.png" alt="TikTok" loading="lazy" decoding="async" />
-                            </a>
+                            </a> */}
                         </div>
                     </div>
 
