@@ -146,6 +146,21 @@
     .footerTop {
         flex-direction: column;
         gap: 40px;
-        align-items: flex-start;
+        align-items: center;
+        text-align: center;
+    }
+    .footerContact p {
+        justify-content: center;
+    }
+    .footerSocialIcons {
+        justify-content: center;
+    }
+    .footerNav ul {
+        align-items: center;
+    }
+    .footerBottom {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
     }
 }

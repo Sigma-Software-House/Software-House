@@ -255,19 +255,51 @@
   margin-bottom: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+  .sectionContactUs {
+      flex-direction: column;
+      margin-top: 80px;
+      text-align: center;
+  }
+
+  .contentContactUs {
+      width: 100%;
+      align-items: center;
+  }
+
+  .titleContactUs {
+      text-align: center;
+      font-size: 36px;
+  }
+
+  .textContactUs {
+      text-align: center;
+      font-size: 18px;
+  }
+
   .formRow {
     flex-direction: column;
     gap: 15px;
   }
   
   .contactForm {
-    padding: 30px;
+    padding: 20px;
   }
   
   .formFooter {
     flex-direction: column;
     gap: 20px;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
+  }
+
+  .recaptchaNote {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .submitButton {
+    width: 100%;
+    justify-content: center;
   }
 }

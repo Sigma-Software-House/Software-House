@@ -58,10 +58,11 @@
 .cardSector {
     max-width: 1600px;
     display: grid;
-    grid-template-columns: repeat(2, minmax(260px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
     align-items: center;
     margin-top: 50px;
+    padding-inline: clamp(20px, 5vw, 80px);
     /* margin-bottom: 80px; */
 }
 
@@ -75,4 +76,42 @@
 
 .buttonSector{
     margin-bottom: 20px;
+}
+
+/* Responsiveness for Sectors */
+@media (max-width: 900px) {
+    .sectionSector {
+        flex-direction: column;
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    .contentSector {
+        width: 100%;
+        align-items: center;
+    }
+
+    .sectionSector .image {
+        width: 100%;
+    }
+
+    .titleSector {
+        text-align: center;
+        font-size: 36px;
+    }
+
+    .textSector {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .cardSector {
+        gap: 20px;
+        padding-inline: clamp(10px, 2vw, 40px);
+    }
+
+    .buttonSector button {
+        width: 100% !important;
+        max-width: 300px;
+    }
 }

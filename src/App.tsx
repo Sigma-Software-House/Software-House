@@ -13,6 +13,7 @@ import Sectors from './pages/sectors/Sectors'
 import SolutionDetail from './pages/solutionDetail/SolutionDetail'
 import SectorDetail from './pages/sectorDetail/SectorDetail'
 import ScrollToTop from './components/scrollToTop/ScrollToTop'
+import Showcases from './pages/showcases/Showcases'
 
 function App() {
   return (
@@ -49,7 +50,15 @@ function App() {
             </>
           }
         />
-        {/* <Route path="/showcases" element={<Showcases />} /> */}
+        <Route
+          path="/showcases"
+          element={
+            <>
+              <Showcases />
+              <Contact />
+            </>
+          }
+        />
         <Route
           path="/setores"
           element={

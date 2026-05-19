@@ -52,11 +52,12 @@
 .cards {
     max-width: 1600px;
     display: grid;
-    grid-template-columns: repeat(4, minmax(260px, 1fr));
-    gap: 24px;
-    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    align-items: stretch;
     margin-top: 50px;
     margin-bottom: 80px;
+    padding-inline: clamp(20px, 5vw, 80px);
 }
 
 .cards>* {
@@ -99,13 +100,15 @@
     max-width: 1360px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 400px);
-    gap: 80px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    padding-inline: clamp(20px, 5vw, 80px);
     justify-content: center;
 }
 
 .methodCard {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 470px;
     border-radius: 20px;
     position: relative;
@@ -114,7 +117,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(3, minmax(260px, 1fr));
+    margin: 0 auto;
 }
 
 .variant-1::before {
@@ -215,4 +218,78 @@
 
 .buttonSectors {
     margin-bottom: 50px;
+}
+
+/* Responsiveness for Home */
+@media (max-width: 900px) {
+    .sectionHome {
+        flex-direction: column;
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    .contentHome {
+        align-items: center;
+    }
+
+    .titleHome {
+        text-align: center;
+        font-size: 36px;
+    }
+
+    .textHome {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .contentHome button {
+        width: 100% !important;
+        max-width: 300px;
+    }
+
+    .cards {
+        gap: 20px;
+        padding-inline: clamp(10px, 2vw, 40px);
+    }
+
+    .methodology {
+        padding: 60px 0;
+    }
+
+    .methodologyContent {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        padding-inline: 20px;
+        gap: 30px;
+    }
+
+    .methodCard {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .titleMethodology {
+        font-size: 32px;
+        padding-inline: 20px;
+    }
+
+    .textMethodology {
+        font-size: 18px;
+        padding-inline: 20px;
+    }
+
+    .buttonMethodology {
+        padding-top: 40px;
+    }
+
+    .buttonMethodology button {
+        width: 100% !important;
+        max-width: 300px;
+    }
+
+    .contentSolutions button, .buttonSectors button {
+        width: 100% !important;
+        max-width: 300px;
+    }
 }

@@ -76,7 +76,7 @@ const MethodologyCarousel = () => {
 
                             {/* O Ícone na esquerda */}
                             <div className="mc-icon-wrapper">
-                                <img src={step.img} alt={step.title} />
+                                <img src={step.img} alt={step.title} loading="lazy" decoding="async" />
                             </div>
 
                             {/* A linha preenchendo o espaço à direita */}
