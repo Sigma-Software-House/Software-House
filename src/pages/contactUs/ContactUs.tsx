@@ -28,7 +28,7 @@ const ContactUs = () => {
         const natureza_consulta = selectedNature === 'Outros' ? outrosTexto : selectedNature;
 
         try {
-            const response = await fetch('http://147.15.52.230:3000/api/clientes', {
+            const response = await fetch('https://api.softwarehouse.dev.br/api/clientes', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
