@@ -80,6 +80,38 @@ const Showcases = () => {
                     </div>
                 </div>
 
+                {/* Rodrigo Soares Advogado Project */}
+                <div className='featuredProject'>
+                    <div className='fp-images'>
+                        {/* <img src="/images/showcases/rodrigo-home.png" alt="Rodrigo Soares Advogado Home" className="fp-main-img" loading="lazy" decoding="async" /> */}
+                        <div className="fp-thumbnails">
+                            <img src="/images/showcases/rodrigo-full.png" alt="Rodrigo Soares Advogado Preview" loading="lazy" decoding="async" />
+                        </div>
+                    </div>
+                    <div className='fp-info'>
+                        <span className='fp-kicker'>Novo Projeto</span>
+                        <h2 className='fp-title'>Rodrigo Soares Advogado</h2>
+                        <div className='fp-tags'>
+                            <span className="fp-tag">React + Vite</span>
+                            <span className="fp-tag">Web Design</span>
+                            <span className="fp-tag">Institucional</span>
+                            <span className="fp-tag">Performance</span>
+                        </div>
+                        <p className='fp-desc'>
+                            Desenvolvimento completo da presença digital do conceituado escritório de advocacia Rodrigo Soares.
+                            Este projeto foi desenhado estrategicamente para transmitir excelência, credibilidade e modernidade,
+                            facilitando a prospecção e o contato direto com clientes de alto nível.
+                            Desenvolvido com <strong>React + Vite</strong>, garantimos uma interface ultrarrápida, fluida e totalmente responsiva. 
+                            O foco em otimização de performance, aliado a um design premium, proporciona uma experiência de usuário (UX) 
+                            impecável e aumenta significativamente a conversão em todas as plataformas e dispositivos.
+                        </p>
+                        
+                        <Button view="primario" onClick={() => window.open('https://rodrigosoaresadvogado.com.br', '_blank')}>
+                            Acessar o Site
+                        </Button>
+                    </div>
+                </div>
+
                 {/* Grid of Showcases */}
                 {/* <div className='showcasesGridTitle'>
                     <h2>Outros Projetos</h2>
