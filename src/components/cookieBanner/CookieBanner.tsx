@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import '../pages/legal/legalPages.css';
+import '../../pages/legal/legalPages.css';
 
 const COOKIE_CONSENT_KEY = 'sh_cookie_consent';
 
