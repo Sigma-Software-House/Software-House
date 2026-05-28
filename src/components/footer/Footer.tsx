@@ -54,9 +54,9 @@ const Footer = () => {
                         <span className='footerRights'>Todos os direitos reservados.</span>
                     </div>
                     <div className='footerLegalLinks'>
-                        <a href="#">Política de Privacidade</a>
-                        <a href="#">Termos de Uso</a>
-                        <a href="#">Política de Cookies</a>
+                        <Link to="/politica-de-privacidade">Política de Privacidade</Link>
+                        <Link to="/termos-de-uso">Termos de Uso</Link>
+                        <Link to="/politica-de-cookies">Política de Cookies</Link>
                     </div>
                 </div>
 

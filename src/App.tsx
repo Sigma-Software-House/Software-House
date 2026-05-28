@@ -14,6 +14,10 @@ import SolutionDetail from './pages/solutionDetail/SolutionDetail'
 import SectorDetail from './pages/sectorDetail/SectorDetail'
 import ScrollToTop from './components/scrollToTop/ScrollToTop'
 import Showcases from './pages/showcases/Showcases'
+import PrivacyPolicy from './pages/legal/PrivacyPolicy'
+import TermsOfUse from './pages/legal/TermsOfUse'
+import CookiePolicy from './pages/legal/CookiePolicy'
+import CookieBanner from './components/cookieBanner/CookieBanner'
 
 function App() {
   return (
@@ -94,10 +98,15 @@ function App() {
             </>
           }
         />
+        <Route path="/politica-de-privacidade" element={<PrivacyPolicy />} />
+        <Route path="/termos-de-uso" element={<TermsOfUse />} />
+        <Route path="/politica-de-cookies" element={<CookiePolicy />} />
       </Routes>
       <Footer />
+      <CookieBanner />
     </Router>
   )
 }
 
 export default App
+

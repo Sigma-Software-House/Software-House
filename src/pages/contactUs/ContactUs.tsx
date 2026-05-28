@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import MethodologyCarousel from '../../components/methodologyCarousel/MethodologyCarousel';
 import './contactUs.css';
 
@@ -186,7 +187,7 @@ const ContactUs = () => {
                                         </svg>
                                     )}
                                 </div>
-                                <p>Este site é protegido pelo reCAPTCHA e as <a href="#">Políticas de Privacidade</a> do Google se aplicam.</p>
+                                <p>Este site é protegido pelo reCAPTCHA e as <Link to="/politica-de-privacidade">Políticas de Privacidade</Link> se aplicam.</p>
                             </div>
                             {errorMsg && <p className="errorMsg" style={{ color: '#ef4444', marginBottom: '10px' }}>{errorMsg}</p>}
                             <button type="submit" className="submitButton" disabled={isLoading}>
