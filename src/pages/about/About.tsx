@@ -24,6 +24,8 @@ const About = () => {
             src="/images/sectors/sector0.png"
             alt="Softwere House"
             className="aboutHeroImage"
+            fetchPriority="high"
+            decoding="async"
           />
         </div>
       </div>

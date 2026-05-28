@@ -25,6 +25,8 @@ const Sectors = () => {
                         src="/images/sectors/sector0.png"
                         alt="Ilustração desenvolvimento"
                         className='sectorHeroImage'
+                        fetchPriority="high"
+                        decoding="async"
                     />
                 </div>
             </div>

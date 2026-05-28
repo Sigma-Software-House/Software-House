@@ -23,7 +23,7 @@ const Navbar = () => {
 
             <div className="navbar-left">
                 <Link to="/" onClick={closeMenu}>
-                    <img className="navbar-logo" src="/logo-branco.png" alt="Logo" />
+                    <img className="navbar-logo" src="/logo-branco.png" alt="Logo" fetchPriority="high" decoding="async" />
                 </Link>
             </div>
 

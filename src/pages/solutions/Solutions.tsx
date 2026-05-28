@@ -20,7 +20,7 @@ const Solutions = () => {
                     </p>
                 </div>
                 <div className='hero-image-container'>
-                    <img src="/images/solutions/solution0.png" alt="Engenharia Full Service" className='hero-image' />
+                    <img src="/images/solutions/solution0.png" alt="Engenharia Full Service" className='hero-image' fetchPriority="high" decoding="async" />
                 </div>
             </div>
 

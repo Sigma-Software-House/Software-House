@@ -36,6 +36,8 @@ const Home = () => {
             src="/homeImage.png"
             alt="Ilustração desenvolvimento"
             className='imageButton'
+            fetchPriority="high"
+            decoding="async"
           />
         </div>
       </div>
