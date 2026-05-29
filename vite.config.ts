@@ -7,7 +7,8 @@ export default defineConfig({
   plugins: [
     react(),
     ViteImageOptimizer({
-      png: { quality: 80 },
+      exclude: [/showcases\//],
+      png: { quality: 90 },
       jpeg: { quality: 80 },
       jpg: { quality: 80 },
       webp: { quality: 80 },
@@ -15,3 +16,4 @@ export default defineConfig({
   ],
   base:'/',
 })
+

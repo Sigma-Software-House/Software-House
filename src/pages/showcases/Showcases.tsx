@@ -1,30 +1,11 @@
 import './showcases.css';
 import Button from '../../components/button/Button';
-
-// const showcasesList = [
-//     {
-//         kicker: "Saúde & Bem-estar",
-//         title: "Portal Telemedicina",
-//         description: "Plataforma de consultas online integrando vídeo e prontuário eletrônico seguro.",
-//     },
-//     {
-//         kicker: "Finanças",
-//         title: "BankPay App",
-//         description: "Aplicativo financeiro com dashboard interativo e transações em tempo real.",
-//     },
-//     {
-//         kicker: "Logística",
-//         title: "Track & Trace System",
-//         description: "Sistema interno para monitoramento global de frotas e controle de estoque.",
-//     },
-//     {
-//         kicker: "E-commerce",
-//         title: "StoreFront B2B",
-//         description: "Plataforma de vendas robusta projetada para suportar alto volume de tráfego.",
-//     }
-// ];
+import { useNavigate } from 'react-router-dom';
+import { Store, PawPrint, Dumbbell } from 'lucide-react';
 
 const Showcases = () => {
+    const navigate = useNavigate();
+
     return (
         <div id="showcases" className='showcasesWrapper'>
             <section className='showcasesContainer'>
@@ -112,45 +93,108 @@ const Showcases = () => {
                     </div>
                 </div>
 
-                {/* Grid of Showcases */}
-                {/* <div className='showcasesGridTitle'>
-                    <h2>Outros Projetos</h2>
-                </div> */}
-                {/* <div className='showcasesGrid'>
-                    {showcasesList.map((item, index) => (
-                        <div className='showcaseCard' key={index}>
-                            <div className='showcaseImagePlaceholder'> */}
-                                {/* Image will go here */}
-                            {/* </div>
-                            <div className='showcaseInfo'>
-                                <span className='showcaseKicker'>{item.kicker}</span>
-                                <h3 className='showcaseItemTitle'>{item.title}</h3>
-                                <p className='showcaseItemDesc'>{item.description}</p>
+                {/* Catalog Section Divider */}
+                <div className='catalog-section'>
+                    <div className='catalog-header'>
+                        <span className='catalog-kicker'>Catálogo de Produtos</span>
+                        <h2 className='catalog-title'>
+                            Soluções Prontas para Escalar seu Negócio.
+                        </h2>
+                        <p className='catalog-subtitle'>
+                            Além dos projetos sob medida, oferecemos produtos digitais próprios — sistemas completos
+                            e prontos para implantação, desenvolvidos com a mesma excelência técnica que aplicamos em
+                            nossos projetos personalizados.
+                        </p>
+                    </div>
+
+                    <div className='catalog-grid'>
+                        {/* Market Management System */}
+                        <div className='catalog-card'>
+                            <div className='catalog-card-image'>
+                                <img src="/images/showcases/market-system.png" alt="Sistema de Gerenciamento de Mercados" loading="lazy" decoding="async" />
+                                <div className='catalog-card-badge available'>Disponível</div>
+                            </div>
+                            <div className='catalog-card-content'>
+                                <div className='catalog-card-icon'>
+                                    <Store size={24} />
+                                </div>
+                                <h3 className='catalog-card-title'>Sistema de Gerenciamento de Mercados - MarketSync</h3>
+                                <p className='catalog-card-desc'>
+                                    Plataforma robusta desenvolvida em <strong>Java</strong> para gestão completa de 
+                                    mercados e supermercados. Controle de estoque em tempo real, gestão de fornecedores, 
+                                    frente de caixa (PDV), relatórios financeiros detalhados e integração fiscal. 
+                                    Arquitetura escalável preparada para operações de pequeno a grande porte.
+                                </p>
+                                <div className='catalog-card-tags'>
+                                    <span className='fp-tag'>Java</span>
+                                    <span className='fp-tag'>Desktop</span>
+                                    <span className='fp-tag'>PDV</span>
+                                    <span className='fp-tag'>Estoque</span>
+                                </div>
+                                <Button view="primario" onClick={() => navigate('/contato')}>
+                                    Solicitar Demonstração
+                                </Button>
                             </div>
                         </div>
-                    ))}
-                </div> */}
 
-                {/* CTA Banner Section */}
-                {/* <div className='ctaBanner'>
-                    <div className='ctaContent'>
-                        <h2 className='ctaTitle'>
-                            Viabilizando a próxima<br /> era digital da sua operação.
-                        </h2>
-                        <p className='ctaDesc'>
-                            Integramos engenharia de alta performance aos seus objetivos
-                            de negócio. Somos o suporte técnico especializado para viabilizar e
-                            escalar plataformas de missão crítica.
-                        </p>
-                        <Button
-                            view="secundario"
-                            width={'auto'}
-                            onClick={() => window.location.href = '/#contato'}
-                        >
-                            Fale conosco
-                        </Button>
+                        {/* Pet Shop SaaS */}
+                        <div className='catalog-card'>
+                            <div className='catalog-card-image'>
+                                <img src="/images/showcases/petshop-saas.png" alt="Sistema de Gerenciamento de Pet Shops" loading="lazy" decoding="async" />
+                                <div className='catalog-card-badge available'>Disponível</div>
+                            </div>
+                            <div className='catalog-card-content'>
+                                <div className='catalog-card-icon'>
+                                    <PawPrint size={24} />
+                                </div>
+                                <h3 className='catalog-card-title'>Sistema de Gerenciamento de Pet Shops</h3>
+                                <p className='catalog-card-desc'>
+                                    Plataforma <strong>SaaS</strong> completa para gestão de pet shops, clínicas 
+                                    veterinárias e serviços de banho & tosa. Agendamento inteligente, cadastro de 
+                                    pets e tutores, controle financeiro, prontuário veterinário e notificações 
+                                    automáticas. Acesse de qualquer lugar via navegador com dados seguros na nuvem.
+                                </p>
+                                <div className='catalog-card-tags'>
+                                    <span className='fp-tag'>SaaS</span>
+                                    <span className='fp-tag'>Cloud</span>
+                                    <span className='fp-tag'>Agendamento</span>
+                                    <span className='fp-tag'>Gestão</span>
+                                </div>
+                                <Button view="primario" onClick={() => navigate('/contato')}>
+                                    Solicitar Demonstração
+                                </Button>
+                            </div>
+                        </div>
+
+                        {/* Gym App */}
+                        <div className='catalog-card'>
+                            <div className='catalog-card-image'>
+                                <img src="/images/showcases/gym-app.png" alt="App de Academia" loading="lazy" decoding="async" />
+                                <div className='catalog-card-badge development'>Em Desenvolvimento</div>
+                            </div>
+                            <div className='catalog-card-content'>
+                                <div className='catalog-card-icon'>
+                                    <Dumbbell size={24} />
+                                </div>
+                                <h3 className='catalog-card-title'>App de Academia - Gym Flow</h3>
+                                <p className='catalog-card-desc'>
+                                    Aplicativo mobile completo para academias e centros fitness. Gestão de treinos 
+                                    personalizados, acompanhamento de evolução do aluno, pagamento de mensalidade pelo app, 
+                                    sistema de notificações e painel administrativo para gestores. Tecnologia de ponta para o mercado fitness.
+                                </p>
+                                <div className='catalog-card-tags'>
+                                    <span className='fp-tag'>Mobile App</span>
+                                    <span className='fp-tag'>iOS & Android</span>
+                                    <span className='fp-tag'>Fitness</span>
+                                    <span className='fp-tag'>Wearables</span>
+                                </div>
+                                <Button view="primario" onClick={() => navigate('/contato')}>
+                                    Registrar Interesse
+                                </Button>
+                            </div>
+                        </div>
                     </div>
-                </div> */}
+                </div>
 
             </section>
         </div>
