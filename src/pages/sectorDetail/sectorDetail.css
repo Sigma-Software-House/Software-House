@@ -1,7 +1,6 @@
 .sectorDetail {
     width: 100%;
     color: #FFFFFF;
-    font-family: 'Poppins', sans-serif;
     padding-bottom: 80px;
     background-color: transparent;
 }
@@ -55,7 +54,6 @@
 }
 
 .sd-title {
-    font-family: 'DM Serif Display', serif;
     font-size: clamp(48px, 8vw, 100px);
     font-weight: 700;
     line-height: 1.1;
@@ -162,7 +160,6 @@
 }
 
 .sd-methodology h2 {
-    font-family: 'DM Serif Display', serif;
     font-size: clamp(32px, 4vw, 48px);
     margin-bottom: 16px;
 }

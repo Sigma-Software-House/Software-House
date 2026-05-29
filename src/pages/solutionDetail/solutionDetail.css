@@ -1,7 +1,6 @@
 .sd-page {
     width: 100%;
     color: #FFFFFF;
-    font-family: 'Poppins', sans-serif;
     padding-bottom: 80px;
     background-color: transparent;
 }
@@ -55,7 +54,6 @@
 }
 
 .sd-title {
-    font-family: 'DM Serif Display', serif;
     font-size: clamp(48px, 8vw, 100px);
     font-weight: 700;
     line-height: 1.1;
@@ -124,7 +122,6 @@
 }
 
 .sd-intro-text h2 {
-    font-family: 'DM Serif Display', serif;
     font-size: clamp(32px, 4vw, 48px);
     line-height: 1.2;
     margin-bottom: 24px;
@@ -184,7 +181,6 @@
 }
 
 .sd-banner h2 {
-    font-family: 'DM Serif Display', serif;
     font-size: clamp(28px, 4vw, 42px);
     margin: 0;
     max-width: 1000px;
@@ -262,7 +258,6 @@
 }
 
 .sd-card-action h3 {
-    font-family: 'DM Serif Display', serif;
     font-size: 22px;
     font-weight: 400;
     margin: 0;
@@ -296,7 +291,6 @@
 }
 
 .sd-methodology h2 {
-    font-family: 'DM Serif Display', serif;
     font-size: clamp(32px, 4vw, 48px);
     margin-bottom: 16px;
 }
@@ -320,7 +314,6 @@
 }
 
 .sd-ec-content h3 {
-    font-family: 'DM Serif Display', serif;
     font-size: 32px;
     margin: 0 0 12px 0;
 }

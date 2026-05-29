@@ -29,7 +29,6 @@
     text-align: left;
     font-weight: 600;
     font-style: italic;
-    font-family: 'DM Serif Display', serif;
 }
 
 .textContactUs {
@@ -58,7 +57,6 @@
   padding: 50px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   color: #ffffff;
-  font-family: 'Inter', 'Poppins', sans-serif;
   border: 1px solid #E5E7EB;
   margin: 0 auto;
 }
@@ -95,7 +93,6 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
-  font-family: inherit;
 }
 
 .pillButton:hover {
@@ -128,7 +125,6 @@
   font-size: 14px;
   outline: none;
   transition: box-shadow 0.2s ease, background-color 0.2s ease;
-  font-family: inherit;
   box-sizing: border-box;
 }
 
@@ -202,7 +198,6 @@
   gap: 10px;
   cursor: pointer;
   transition: background-color 0.2s ease;
-  font-family: inherit;
 }
 
 .submitButton:hover {
@@ -244,7 +239,6 @@
   font-weight: 700;
   color: #FFFFFF;
   margin-bottom: 16px;
-  font-family: 'DM Serif Display', serif;
 }
 
 .successText {

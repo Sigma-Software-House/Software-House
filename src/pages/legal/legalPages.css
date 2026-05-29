@@ -4,7 +4,6 @@
     margin: 0 auto;
     padding: 120px clamp(20px, 5vw, 80px) 60px;
     color: #ffffff;
-    font-family: 'Inter', 'Poppins', sans-serif;
 }
 
 .legal-header {
@@ -17,7 +16,6 @@
     font-size: clamp(32px, 5vw, 50px);
     font-weight: 600;
     font-style: italic;
-    font-family: 'DM Serif Display', serif;
     margin: 0 0 16px 0;
     text-align: left;
     letter-spacing: -0.5px;
@@ -43,7 +41,6 @@
     margin: 48px 0 20px 0;
     padding-bottom: 12px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    font-family: 'DM Serif Display', serif;
     font-style: italic;
 }
 
@@ -238,7 +235,6 @@
     font-weight: 600;
     cursor: pointer;
     transition: all 0.2s ease;
-    font-family: inherit;
     border: none;
 }
 

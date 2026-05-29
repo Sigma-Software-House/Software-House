@@ -28,7 +28,6 @@
     text-align: left;
     font-weight: 600;
     font-style: italic;
-    font-family: 'DM Serif Display', serif;
 }
 
 .textHome {
@@ -82,7 +81,6 @@
 }
 
 .titleMethodology {
-    font-family: 'DM Serif Display', serif;
     font-style: italic;
     align-items: center;
     font-size: 50px;
@@ -90,7 +88,6 @@
 }
 
 .textMethodology {
-    font-family: 'DM Serif Display', serif;
     margin: 20px auto;
     font-size: 25px;
     max-width: 900px;
@@ -190,14 +187,12 @@
 }
 
 .methodTitle {
-    font-family: 'Poppins';
     font-size: 40px;
     text-align: center;
     color: white;
 }
 
 .methodText {
-    font-family: 'Poppins';
     font-size: 20px;
     text-align: center;
     color: white;
