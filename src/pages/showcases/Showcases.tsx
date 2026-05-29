@@ -30,9 +30,9 @@ const Showcases = () => {
                 {/* Featured Project */}
                 <div className='featuredProject'>
                     <div className='fp-images'>
-                        <img src="/images/showcases/danger-home.png" alt="Danger Kiss Cover Home" className="fp-main-img" loading="lazy" decoding="async" />
+                        <img src="/images/showcases/danger-home-v2.png" alt="Danger Kiss Cover Home" className="fp-main-img" loading="lazy" decoding="async" />
                         <div className="fp-thumbnails">
-                            <img src="/images/showcases/danger-full.png" alt="Danger Kiss Cover Preview" loading="lazy" decoding="async" />
+                            <img src="/images/showcases/danger-full-v2.png" alt="Danger Kiss Cover Preview" loading="lazy" decoding="async" />
                         </div>
                     </div>
                     <div className='fp-info'>
